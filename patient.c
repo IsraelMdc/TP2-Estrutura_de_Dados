@@ -38,7 +38,7 @@ int q_is_empty(QueuePatient *q)
    return q->front == NULL;
 }
 
-QueuePatient *q_enqueue(QueuePatient *q, Patient *patient)
+void q_enqueue(QueuePatient *q, Patient *patient)
 {
    QueueNodePatient *node = (QueueNodePatient *)malloc(sizeof(QueueNodePatient)); // Allocate memory for the new node.
    node->patient = patient; // Set the data for the new node.
@@ -46,19 +46,19 @@ QueuePatient *q_enqueue(QueuePatient *q, Patient *patient)
     
    if (q->rear == NULL) // If the queue is empty, set both the front and rear pointers to the new node.
    {
-      q->front = q->rear = node;
+      q->front = node;
+      q->rear = node;
    }
    else // Otherwise, add the new node to the end of the queue and update the rear pointer.
    {
       q->rear->next = node;
       q->rear = node;
    }
-
-   return q;
 }
 
+
 // Function to dequeue and return a float value from the queue.
-Patient* q_dequeue(QueuePatient *q)
+void q_dequeue(QueuePatient *q)
 {
    assert(!q_is_empty(q));
 
@@ -71,7 +71,6 @@ Patient* q_dequeue(QueuePatient *q)
       q->front = q->rear = NULL;
 
    free(p);
-   return patient;
 }
 
 void q_print(QueuePatient *q)
@@ -87,20 +86,52 @@ void q_print(QueuePatient *q)
    }
 }
 
-Patient* createPatient(int id, const char* name, int timestamp)
+void pacient_writer(Patient *patient)
+{
+   assert(patient != NULL);
+
+   char *filename = "db_patient.txt";
+
+   // open the file for writing
+    FILE *fp = fopen(filename, "a");
+    if (fp == NULL)
+    {
+        printf("Error opening the file %s", filename);
+        return;
+    }
+    // write to the text file
+    fprintf(fp, "Patient ID: %d, Name: %s, Timestamp: %d\n", patient->id, patient->name, patient->timestamp);
+
+    // close the file
+    fclose(fp);
+
+}
+
+Patient* createPatient(int id, int timestamp)
 {   
     Patient* patient = (Patient*)malloc(sizeof(Patient));
-    
     assert(patient != NULL);
 
+    char *name_patient = gen_name();
     patient->id = id;
-
-    strncpy(patient->name, name, sizeof(patient->name) - 1);
-
+    strncpy(patient->name, name_patient, sizeof(patient->name) - 1);
     patient->name[sizeof(patient->name) - 1] = '\0';
-    patient->timestamp = timestamp;
 
+    patient->timestamp = timestamp;
     return patient;
 }
 
+char* gen_name()
+{
+   char* name = (char*)malloc(100 * sizeof(char)); // Allocate memory for the name string.
+
+   char *first[] = {"John", "Jane", "Alice", "Bob", "Charlie", "David", "Eve", "Frank", "Grace", "Henry"};
+   char *last[] = {"Smith", "Johnson", "Williams", "Jones", "Brown", "Davis", "Miller", "Wilson", "Moore", "Taylor"};
+
+   strcpy(name, first[rand() % 10]);
+   strcat(name, " ");
+   strcat(name, last[rand() % 10]);
+
+   return name;
+}
 

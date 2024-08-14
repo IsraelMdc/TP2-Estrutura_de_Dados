@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "TESTE.C": "cpp"
+        "TESTE.C": "cpp",
+        "patient.h": "c",
+        "typeinfo": "c"
     }
 }

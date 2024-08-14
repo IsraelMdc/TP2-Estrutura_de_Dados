@@ -1,17 +1,29 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "patient.h"
 
 int main()
 {
-    int timestamp = 0;
+    int timestamp = 1;
+    int id = 0;
 
-    QueuePatient *q = q_create();
+    while (timestamp < 10)
+    {
+ 
+        char* name = gen_name();
 
-    Patient *patient = createPatient(1, "John Doe", timestamp );
+        QueuePatient *q = q_create();
+        id++;
+        Patient *patient = createPatient(id, timestamp);
+        pacient_writer(patient);
 
-    QueuePatient *q_enqueue(QueuePatient *q, Patient *patient);
+        q_enqueue(q, patient);
 
+        q_print(q); 
 
-    q_print(q);
+        
+        timestamp++;
+    }
+    
 
 }
