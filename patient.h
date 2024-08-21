@@ -11,8 +11,6 @@ QueuePatient *q_create();
 
 void q_enqueue(QueuePatient *q, Patient *patient);
 
-void q_dequeue(QueuePatient *q);
-
 int q_is_empty(QueuePatient *q);
 
 void q_print(QueuePatient *q);

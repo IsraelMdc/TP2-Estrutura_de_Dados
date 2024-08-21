@@ -56,23 +56,6 @@ void q_enqueue(QueuePatient *q, Patient *patient)
    }
 }
 
-
-// Function to dequeue and return a float value from the queue.
-void q_dequeue(QueuePatient *q)
-{
-   assert(!q_is_empty(q));
-
-   Patient *patient = q->front->patient;
-   QueueNodePatient *p = q->front; // Store for removal
-
-   if (q->front != q->rear)
-      q->front = q->front->next;
-   else
-      q->front = q->rear = NULL;
-
-   free(p);
-}
-
 void q_print(QueuePatient *q)
 {
    assert(q != NULL); 
