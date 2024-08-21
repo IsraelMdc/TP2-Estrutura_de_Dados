@@ -2,32 +2,35 @@
 #include <stdlib.h>
 #include "patient.h"
 #include "machine.h"
+#include "aux.h"
 
 int main()
 {
     int timestamp = 1;
-    int id = 0;
-    
+    int id = 1;
+
+
     MachineList *machine_list = createMachineList();
     initializeMachinesOnList(machine_list);
 
-    
+    QueuePatient *q = q_create();
 
-    while (timestamp < 6)
+    while (timestamp < 7)
     {
-
-        QueuePatient *q = q_create();
-        id++;
-        Patient *patient = createPatient(id, timestamp);
-        pacient_writer(patient);
-
-        insertPatientOnMachine(machine_list, patient, timestamp);
-
-        q_enqueue(q, patient);
-
-        q_print(q); 
-
+        int patient_arrival = gen_randit(1, 5);
         
+        if (patient_arrival == 1)
+        {
+            Patient *patient = createPatient(id, timestamp);
+            pacient_writer(patient);
+            q_enqueue(q, patient);
+            
+            q_print(q);
+            printf("\n--------------------------------");  
+
+            id++;          
+        }
+
         timestamp++;
     }
     printMachines(machine_list);

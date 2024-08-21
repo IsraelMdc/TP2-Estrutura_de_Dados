@@ -15,9 +15,17 @@ struct machine_node
     int id_machine;
     int is_occupied;
     int machine_timestamp;
-    Patient *patient;
+    Patient *machine_patient;
     MachineNode *next;
 };
+
+struct patient
+{
+    int id;
+    char name[100];
+    int timestamp;   
+};
+
 
 
 MachineNode *createMachine(int id)
@@ -25,7 +33,7 @@ MachineNode *createMachine(int id)
     MachineNode *machine_node = (MachineNode *)malloc(sizeof(MachineNode));
     machine_node->id_machine = id;
     machine_node->is_occupied = 0;
-    machine_node->patient = NULL;
+    machine_node->machine_patient = NULL;
     machine_node->next = NULL;
     
     return machine_node;
@@ -51,12 +59,15 @@ void initializeMachinesOnList(MachineList *machine_list)
 void printMachines(MachineList *machine_list)
 {
     MachineNode *current = machine_list->first;
+
     while (current != NULL)
     {
         printf("Machine ID: %d\n", current->id_machine);
         printf("Machine is occupied: %d\n", current->is_occupied);
         printf("Machine timestamp: %d\n", current->machine_timestamp);
-        printf("\n --------------\n");
+        printf("Machine patient: %d\n", current->machine_patient->id);
+        printf("Machine patient name: %s\n", current->machine_patient->name);
+        printf("\n --------------");
         
         current = current->next;    
     }
@@ -71,10 +82,14 @@ void insertPatientOnMachine(MachineList *machine_list, Patient *patient, int tim
         {
             current->is_occupied = 1;
             current->machine_timestamp = timestamp;
-            current->patient = patient;
+            current->machine_patient = patient;
+            
             break;
         }
 
         current = current->next;
     }
 }
+
+
+

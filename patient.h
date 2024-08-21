@@ -1,6 +1,9 @@
 #ifndef PATIENT_H
 #define PATIENT_H
 
+#include <stdio.h>
+#include <machine.h>
+
 typedef struct patient Patient;
 typedef struct queue_patient QueuePatient;
 typedef struct queue_node_patient QueueNodePatient;
@@ -18,6 +21,8 @@ void q_print(QueuePatient *q);
 char* gen_name();
 
 void pacient_writer(Patient *patient);
+
+void queueToMachine(QueuePatient *q, MachineList *machine_list, int timestamp);
 
 
 #endif  

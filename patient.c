@@ -1,4 +1,5 @@
 #include "patient.h"
+#include "machine.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -118,3 +119,9 @@ char* gen_name()
    return name;
 }
 
+void queueToMachine(QueuePatient *q, MachineList *machine_list, int timestamp)
+{
+    Patient *patient = q->front->patient;
+    insertPatientOnMachine(machine_list, patient, timestamp);
+    q->front = q->front->next;
+}
