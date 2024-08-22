@@ -4,6 +4,7 @@
         "patient.h": "c",
         "typeinfo": "c",
         "stdlib.h": "c",
-        "assert.h": "c"
+        "assert.h": "c",
+        "random": "c"
     }
 }

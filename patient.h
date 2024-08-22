@@ -2,11 +2,13 @@
 #define PATIENT_H
 
 #include <stdio.h>
-#include <machine.h>
+#include "machine.h"
+
 
 typedef struct patient Patient;
 typedef struct queue_patient QueuePatient;
 typedef struct queue_node_patient QueueNodePatient;
+typedef struct machine_list MachineList;
 
 Patient* createPatient(int id, int timestamp);
 
@@ -22,8 +24,13 @@ char* gen_name();
 
 void pacient_writer(Patient *patient);
 
-void queueToMachine(QueuePatient *q, MachineList *machine_list, int timestamp);
+int gen_randint(int initial_number, int final_number);
 
+void print_queue_front(QueuePatient *q);
+
+void d_queue_pacient_to_machine(QueuePatient *q, MachineList *machine_list, int timestamp);
+
+void d_queue(QueuePatient *q);
 
 #endif  
 

@@ -91,5 +91,70 @@ void insertPatientOnMachine(MachineList *machine_list, Patient *patient, int tim
     }
 }
 
+int machine_is_available(MachineList *machine_list)
+{
+    MachineNode *current = machine_list->first;
+    while (current != NULL)
+    {
+        if (current->is_occupied == 0)
+        {
+            
+            return current->id_machine;
+        }
+        current = current->next;
+    }
 
+    
+    return 0;
+}
 
+void insertPatientOnMachineById(MachineList *machine_list, int machine_id, Patient *patient, int timestamp)
+{
+    MachineNode *current = machine_list->first;
+    while (current != NULL)
+    {
+        if (current->id_machine == machine_id)
+        {
+            current->is_occupied = 1;
+            current->machine_timestamp = timestamp;
+            current->machine_patient = patient;
+            break;
+        }
+
+        current = current->next;
+    }
+}
+
+void removePatientFromMachine(MachineList *machine_list, int machine_id)
+{
+    MachineNode *current = machine_list->first;
+    while (current != NULL)
+    {
+        if (current->id_machine == machine_id)
+        {
+            current->is_occupied = 0;
+            current->machine_timestamp = 0;
+            current->machine_patient = NULL;
+            break;
+        }
+
+        current = current->next;
+    }
+}
+
+void pre_diagnosis_manager(MachineList *machine_list, int timestamp, QueuePatient *patient_queue)
+{
+    MachineNode *node = machine_list->first;   
+
+    while (node != NULL)
+    {
+        if (timestamp >= node->machine_timestamp +10)
+        {
+            printf("Patient %s arrived %d is being removed from machine %d at %d \n", node->machine_patient->name, node->machine_timestamp , node->id_machine, timestamp);
+            d_queue_pacient_to_machine(patient_queue, machine_list, timestamp);
+
+            //d_queue(patient_queue);
+        }
+        node = node->next;
+    }
+}

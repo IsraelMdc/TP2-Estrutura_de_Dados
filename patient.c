@@ -25,6 +25,20 @@ struct queue_node_patient
    QueueNodePatient *next; // A pointer to the next node in the linked list.
 };
 
+struct machine_list
+{
+    MachineNode *first;
+};
+
+struct machine_node
+{
+    int id_machine;
+    int is_occupied;
+    int machine_timestamp;
+    Patient *machine_patient;
+    MachineNode *next;
+};
+
 // Function to create a new empty queue.
 QueuePatient *q_create()
 {
@@ -119,9 +133,49 @@ char* gen_name()
    return name;
 }
 
-void queueToMachine(QueuePatient *q, MachineList *machine_list, int timestamp)
+
+int gen_randint(int initial_number, int final_number)
 {
-    Patient *patient = q->front->patient;
-    insertPatientOnMachine(machine_list, patient, timestamp);
+   return initial_number + rand()%(final_number - initial_number + 1);
+}
+
+
+void print_queue_front(QueuePatient *q)
+{
+    printf("Patient ID: %d, Name: %s, Timestamp: %d\n", q->front->patient->id, q->front->patient->name, q->front->patient->timestamp);
+}
+
+void d_queue_pacient_to_machine(QueuePatient *q, MachineList *machine_list, int timestamp)
+{
+    if (q_is_empty(q))
+    {
+        return;
+    }
+
+    MachineNode *current = machine_list->first;
+    while (current != NULL)
+    {
+        if (machine_is_available(machine_list))
+        {
+            current->is_occupied = 1;
+            current->machine_patient = q->front->patient;
+            current->machine_timestamp = timestamp;
+            q->front = q->front->next;
+            return;
+        }
+        current = current->next;
+    }
+}
+
+void d_queue(QueuePatient *q)
+{
+    if (q_is_empty(q))
+    {
+        return;
+    }
+
+    QueueNodePatient *temp = q->front;
     q->front = q->front->next;
+    print_queue_front(q);
+    free(temp);
 }
