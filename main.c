@@ -9,12 +9,14 @@ int main()
 {
     int timestamp = 1;
     int id = 1;
+    int id_exam = 1;
 
     MachineList *machine_list = createMachineList();
     initializeMachinesOnList(machine_list);
 
-    QueuePatient *q_patient_outs = q_create();
-    QueuePatient *q_patient = q_create();
+    QueuePatient *q_patient_outs = q_patient_create();
+    QueuePatient *q_patient = q_patient_create();
+    QueueExam *q_exam = q_exam_create();
 
     while (timestamp < 1000)
     {
@@ -32,7 +34,8 @@ int main()
             
         }
         
-        checkExamDuration(machine_list, timestamp, q_patient, q_patient_outs);
+        checkExamDuration(id_exam, q_exam, machine_list, timestamp, q_patient, q_patient_outs);
+
 
 
 

@@ -12,7 +12,7 @@ typedef struct machine_list MachineList;
 
 Patient* createPatient(int id, int timestamp);
 
-QueuePatient *q_create();
+QueuePatient *q_patient_create();
 
 void q_enqueue(QueuePatient *q, Patient *patient);
 

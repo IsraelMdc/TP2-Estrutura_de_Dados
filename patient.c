@@ -1,5 +1,6 @@
 #include "patient.h"
 #include "machine.h"
+#include "exam.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -40,17 +41,11 @@ struct machine_node
 };
 
 // Function to create a new empty queue.
-QueuePatient *q_create()
+QueuePatient *q_patient_create()
 {
    QueuePatient *q = (QueuePatient *)malloc(sizeof(QueuePatient)); // Allocate memory for the queue structure.
    q->front = q->rear = NULL;                 // Initialize the front and rear pointers to NULL, indicating an empty queue.
    return q;
-}
-
-// Function to check whether the queue is empty.
-int q_is_empty(QueuePatient *q)
-{
-   return q->front == NULL;
 }
 
 void q_enqueue(QueuePatient *q, Patient *patient)
@@ -69,6 +64,30 @@ void q_enqueue(QueuePatient *q, Patient *patient)
       q->rear->next = node;
       q->rear = node;
    }
+}
+
+Patient *patient_dequeue(QueuePatient *q)
+{
+   assert(!q_is_empty(q));
+
+   Patient *patient = q->front->patient; // Store the patient data from the front of the queue.
+
+   QueueNodePatient *temp = q->front; // Store the front node of the queue.
+
+   if(q->front != q->rear) // If the front and rear pointers arent equal, there is more than one node in the queue.
+   {
+      q->front = q->front->next;   }
+   else // Otherwise, update the front pointer to the next node in the queue.
+   {
+      
+      q->front = q->rear = NULL; // Set both the front and rear pointers to NULL to indicate an empty queue.
+
+   }
+   
+   free(temp); // Free the memory allocated for the front node.
+   return patient; // Return the patient data that was dequeued.
+
+
 }
 
 void q_print(QueuePatient *q)
@@ -155,6 +174,13 @@ int gen_randint(int initial_number, int final_number)
    return initial_number + rand()%(final_number - initial_number + 1);
 }
 
+// Function to check whether the queue is empty.
+int q_is_empty(QueuePatient *q)
+{
+   return q->front == NULL;
+}
+
+
 
 void print_queue_front(QueuePatient *q)
 {
@@ -168,26 +194,4 @@ void print_patient(Patient *patient)
 }
 
 
-Patient *patient_dequeue(QueuePatient *q)
-{
-   assert(!q_is_empty(q));
 
-   Patient *patient = q->front->patient; // Store the patient data from the front of the queue.
-
-   QueueNodePatient *temp = q->front; // Store the front node of the queue.
-
-   if(q->front != q->rear) // If the front and rear pointers arent equal, there is more than one node in the queue.
-   {
-      q->front = q->front->next;   }
-   else // Otherwise, update the front pointer to the next node in the queue.
-   {
-      
-      q->front = q->rear = NULL; // Set both the front and rear pointers to NULL to indicate an empty queue.
-
-   }
-   
-   free(temp); // Free the memory allocated for the front node.
-   return patient; // Return the patient data that was dequeued.
-
-
-}

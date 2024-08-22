@@ -1,5 +1,6 @@
 #include "machine.h"
 #include "patient.h"
+#include "exam.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -140,7 +141,7 @@ Patient *removePatientFromMachine(MachineList *machine_list, int machine_id)
     return NULL;
 }
 
-void checkExamDuration(MachineList *machine_list, int timestamp, QueuePatient *patient_queue, QueuePatient *q_patient_outs)
+void checkExamDuration(int id_exam, QueueExam *queue_exam, MachineList *machine_list, int timestamp, QueuePatient *patient_queue, QueuePatient *q_patient_outs)
 {
     MachineNode *current = machine_list->first;
     while (current != NULL)
@@ -149,6 +150,8 @@ void checkExamDuration(MachineList *machine_list, int timestamp, QueuePatient *p
         {
             printf("Exam finished for patient %s arrived %d at machine %d out at %d\n", current->machine_patient->name,current->machine_timestamp, current->id_machine, timestamp);
             Patient *removed_patient = removePatientFromMachine(machine_list, current->id_machine);
+
+            id_exam = exam_creation(queue_exam, id_exam, current->id_machine, removed_patient->id, timestamp);
 
             q_enqueue(q_patient_outs, removed_patient);
 

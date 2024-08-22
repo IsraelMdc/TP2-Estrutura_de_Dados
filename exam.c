@@ -4,6 +4,7 @@
 #include <string.h>
 #include "exam.h"
 #include "machine.h"
+#include "patient.h"
 
 struct exam{
     int exam_id;
@@ -16,12 +17,12 @@ struct exam{
 
 struct queue_node_exam{
     Exam *exam;
-    struct QueueNodeExam *next;
+    QueueNodeExam *next;
 };
 
 struct queue_exam{
-    struct QueueNodeExam *front;
-    struct QueueNodeExam *rear;
+    QueueNodeExam *front;
+    QueueNodeExam *rear;
 };
 
 QueueExam *q_exam_create()
@@ -29,7 +30,7 @@ QueueExam *q_exam_create()
     QueueExam *q = (QueueExam *)malloc(sizeof(QueueExam)); // Allocate memory for the queue structure.
     q->front = q->rear = NULL;                 // Initialize the front and rear pointers to NULL, indicating an empty queue.
     return q;
-}
+};
 
 void q_exam_enqueue(QueueExam *q, Exam *exam)
 {
@@ -48,11 +49,18 @@ void q_exam_enqueue(QueueExam *q, Exam *exam)
       q->rear->next = node;
       q->rear = node;
    }
+};
+
+// Function to check whether the queue is empty.
+int q_is_empty_exam(QueueExam *q)
+{
+   return q->front == NULL;
 }
 
-Patient *q_exam_dequeue(QueueExam *q)
+
+Exam *q_exam_dequeue(QueueExam *q)
 {
-   assert(!q_is_empty(q));
+   assert(!q_is_empty_exam(q));
 
    Exam *exam = q->front->exam; // Store the exam data from the front of the queue.
 
@@ -61,6 +69,7 @@ Patient *q_exam_dequeue(QueueExam *q)
    if(q->front != q->rear) // If the front and rear pointers arent equal, there is more than one node in the queue.
    {
       q->front = q->front->next;   }
+
    else // Otherwise, update the front pointer to the next node in the queue.
    {
       
@@ -73,59 +82,87 @@ Patient *q_exam_dequeue(QueueExam *q)
 
 }
 
-void exam_condition(ExamNode *report_node)
+Exam* createExam(int id, int machine_id, int patient_id,  int timestamp)
+{   
+    Exam* exam = (Exam*)malloc(sizeof(Exam));
+
+    exam->exam_id = id;
+    exam->machine_id = machine_id;
+    exam->patient_id = patient_id;
+    exam->timestamp = timestamp;
+
+    assert(exam != NULL);
+
+    exam_condition(exam);
+
+    return exam;
+}
+
+int exam_creation(QueueExam *queue_exam, int id, int machine_id, int patient_id,  int timestamp){
+
+    Exam *exam = createExam( id, machine_id, patient_id, timestamp);
+    id++;
+
+    //exam_writer();
+    q_exam_enqueue(queue_exam, exam);
+
+    return id;
+
+}
+
+void exam_condition(Exam *exam)
 {
     int chance = gen_randint(0, 100);
 
     if (chance <= 30) {
-        strcpy(report_node->exam->condition_IA, "saude normal");
-        report_node->exam->gravidade = 1;
+        strcpy(exam->condition_IA, "saude normal");
+        exam->gravidade = 1;
     } 
 
     else if (chance > 30 && chance <= 50) 
     {
-        strcpy(report_node->exam->condition_IA, "bronquite");
-        report_node->exam->gravidade = 2;
+        strcpy(exam->condition_IA, "bronquite");
+        exam->gravidade = 2;
     }
 
     else if (chance > 50 && chance <= 60) 
     {
-        strcpy(report_node->exam->condition_IA, "pneumonia");
-        report_node->exam->gravidade = 3;
+        strcpy(exam->condition_IA, "pneumonia");
+        exam->gravidade = 3;
     } 
 
     else if (chance > 60 && chance <= 70) 
     {
-        strcpy(report_node->exam->condition_IA, "COVID");
-        report_node->exam->gravidade = 4;
+        strcpy(exam->condition_IA, "COVID");
+        exam->gravidade = 4;
     } 
 
     else if (chance > 70 && chance <= 75) 
     {
-        strcpy(report_node->exam->condition_IA, "Embolia pulmonar");
-        report_node->exam->gravidade = 4;    
+        strcpy(exam->condition_IA, "Embolia pulmonar");
+        exam->gravidade = 4;    
     }
 
     else if (chance > 75 && chance <= 80) 
     {
-        strcpy(report_node->exam->condition_IA, "Derrame pleural");
-        report_node->exam->gravidade = 4;    
+        strcpy(exam->condition_IA, "Derrame pleural");
+        exam->gravidade = 4;    
     }
 
     else if (chance > 80 && chance <= 85) 
     {
-        strcpy(report_node->exam->condition_IA, "Fibrose pulmonar");
-        report_node->exam->gravidade = 5;    
+        strcpy(exam->condition_IA, "Fibrose pulmonar");
+        exam->gravidade = 5;    
     }
     
     else if (chance > 85 && chance <= 90) 
     {
-        strcpy(report_node->exam->condition_IA, "Tuberculose");
-        report_node->exam->gravidade = 5;    
+        strcpy(exam->condition_IA, "Tuberculose");
+        exam->gravidade = 5;    
     }
     else if (chance > 90) 
     {
-        strcpy(report_node->exam->condition_IA, "Cancer de pulmao");
-        report_node->exam->gravidade = 6;
+        strcpy(exam->condition_IA, "Cancer de pulmao");
+        exam->gravidade = 6;
     }
 }
