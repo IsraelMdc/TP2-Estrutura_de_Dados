@@ -30,11 +30,7 @@ int gen_randint(int initial_number, int final_number);
 
 void print_queue_front(QueuePatient *q);
 
-void d_queue_pacient_to_machine(QueuePatient *q, MachineList *machine_list, int timestamp);
-
 Patient *patient_dequeue(QueuePatient *q);
-
-void d_queue(QueuePatient *q);
 
 int patient_Creation(int id, int timestamp, QueuePatient *q_patient);
 

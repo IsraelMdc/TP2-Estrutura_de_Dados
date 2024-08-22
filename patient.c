@@ -7,9 +7,9 @@
 
 struct patient
 {
-    int id;
-    char name[100];
-    int timestamp;   
+   int id;
+   char name[100];
+   int timestamp;   
 };
 
 struct queue_patient
@@ -119,6 +119,22 @@ Patient* createPatient(int id, int timestamp)
     return patient;
 }
 
+int patient_Creation(int id, int timestamp, QueuePatient *q_patient)
+{
+   
+   int patient_arrival = gen_randint(1, 100);
+   //printf("Patient arrival chance: %d\n", patient_arrival);
+   if (patient_arrival >= 80)
+   {
+      Patient *patient = createPatient(id, timestamp);
+      id++; 
+      pacient_writer(patient);
+      q_enqueue(q_patient, patient);
+      
+   }
+   return id;
+}
+
 char* gen_name()
 {
    char* name = (char*)malloc(100 * sizeof(char)); // Allocate memory for the name string.
@@ -142,7 +158,8 @@ int gen_randint(int initial_number, int final_number)
 
 void print_queue_front(QueuePatient *q)
 {
-    printf("Patient ID: %d, Name: %s, Timestamp: %d\n", q->front->patient->id, q->front->patient->name, q->front->patient->timestamp);
+   assert(q != NULL);
+   printf("Patient ID: %d, Name: %s, Timestamp: %d\n", q->front->patient->id, q->front->patient->name, q->front->patient->timestamp);
 }
 
 void print_patient(Patient *patient)
@@ -150,27 +167,6 @@ void print_patient(Patient *patient)
    printf("Patient ID: %d, Name: %s, Timestamp: %d\n", patient->id, patient->name, patient->timestamp);
 }
 
-void d_queue_pacient_to_machine(QueuePatient *q, MachineList *machine_list, int timestamp)
-{
-    if (q_is_empty(q))
-    {
-        return;
-    }
-
-    MachineNode *current = machine_list->first;
-    while (current != NULL)
-    {
-        if (machine_is_available(machine_list))
-        {
-            current->is_occupied = 1;
-            current->machine_patient = q->front->patient;
-            current->machine_timestamp = timestamp;
-            q->front = q->front->next;
-            return;
-        }
-        current = current->next;
-    }
-}
 
 Patient *patient_dequeue(QueuePatient *q)
 {
@@ -194,33 +190,4 @@ Patient *patient_dequeue(QueuePatient *q)
    return patient; // Return the patient data that was dequeued.
 
 
-}
-
-void d_queue(QueuePatient *q)
-{
-    if (q_is_empty(q))
-    {
-        return;
-    }
-
-    QueueNodePatient *temp = q->front;
-    q->front = q->front->next;
-    print_queue_front(q);
-    free(temp);
-}
-
-int patient_Creation(int id, int timestamp, QueuePatient *q_patient)
-{
-   
-   int patient_arrival = gen_randint(1, 100);
-   printf("Patient arrival chance: %d\n", patient_arrival);
-   if (patient_arrival >= 80)
-   {
-      Patient *patient = createPatient(id, timestamp);
-      id++; 
-      pacient_writer(patient);
-      q_enqueue(q_patient, patient);
-      
-   }
-   return id;
 }

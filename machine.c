@@ -108,24 +108,57 @@ int machine_is_available(MachineList *machine_list)
     return 0;
 }
 
-void insertPatientOnMachineById(MachineList *machine_list, int machine_id, Patient *patient, int timestamp)
+Patient *removePatientFromMachine(MachineList *machine_list, int machine_id)
 {
     MachineNode *current = machine_list->first;
+    
+
     while (current != NULL)
     {
         if (current->id_machine == machine_id)
         {
-            current->is_occupied = 1;
-            current->machine_timestamp = timestamp;
-            current->machine_patient = patient;
-            break;
+            current->is_occupied = 0;
+            current->machine_timestamp = 0;
+            Patient *patient = current->machine_patient;
+            current->machine_patient = NULL;
+            
+            if (patient != NULL)
+            {
+                return patient;
+            }
+            
+            else
+            {
+                break;
+            }
+
         }
 
         current = current->next;
     }
+    
+    return NULL;
 }
 
-void removePatientFromMachine(MachineList *machine_list, int machine_id)
+void checkExamDuration(MachineList *machine_list, int timestamp, QueuePatient *patient_queue, QueuePatient *q_patient_outs)
+{
+    MachineNode *current = machine_list->first;
+    while (current != NULL)
+    {
+        if (current->is_occupied == 1 && timestamp >= current->machine_timestamp + 10)
+        {
+            printf("Exam finished for patient %s arrived %d at machine %d out at %d\n", current->machine_patient->name,current->machine_timestamp, current->id_machine, timestamp);
+            Patient *removed_patient = removePatientFromMachine(machine_list, current->id_machine);
+
+            q_enqueue(q_patient_outs, removed_patient);
+
+            movePatientToQueue(machine_list, current->id_machine, q_patient_outs, removed_patient);
+        }
+        current = current->next;
+    }
+};
+
+void movePatientToQueue(MachineList *machine_list, int machine_id, QueuePatient *new_queue, Patient *patient)
 {
     MachineNode *current = machine_list->first;
     while (current != NULL)
@@ -140,42 +173,4 @@ void removePatientFromMachine(MachineList *machine_list, int machine_id)
 
         current = current->next;
     }
-}
-
-void pre_diagnosis_manager(MachineList *machine_list, int timestamp, QueuePatient *patient_queue)
-{
-    MachineNode *node = machine_list->first;   
-
-    while (node != NULL)
-    {
-        if (timestamp >= node->machine_timestamp +10)
-        {
-            printf("Patient %s arrived %d is being removed from machine %d at %d \n", node->machine_patient->name, node->machine_timestamp , node->id_machine, timestamp);
-            d_queue_pacient_to_machine(patient_queue, machine_list, timestamp);
-
-            //d_queue(patient_queue);
-        }
-        node = node->next;
-    }
-}
-
-Patient * machine_done(MachineList *machine_list, int timestamp) {
-    printf("TESTE MACHINE DONE");
-    MachineNode *machine_node = machine_list->first;
-    while(machine_node != NULL) {
-        if(machine_node->machine_timestamp + 10 == timestamp) {
-            
-            machine_node->is_occupied = 0;
-            machine_node->machine_timestamp = 0;
-            Patient *patient = machine_node->machine_patient;
-            machine_node->machine_patient = NULL;
-            
-            return patient;
-        }
-
-        machine_node = machine_node->next;
-
-    }
-
-    return NULL;
 }

@@ -9,6 +9,7 @@
         "array": "c",
         "deque": "c",
         "vector": "c",
-        "string_view": "c"
+        "string_view": "c",
+        "stdio.h": "c"
     }
 }

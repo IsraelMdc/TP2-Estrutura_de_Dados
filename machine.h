@@ -22,11 +22,10 @@ void insertPatientOnMachine(MachineList *machine_list, Patient *patient, int tim
 //1 to open machine, 0 to closed machine
 int machine_is_available(MachineList *machine_list);
 
-void removePatientFromMachine(MachineList *machine_list, int machine_id);
+Patient * removePatientFromMachine(MachineList *machine_list, int machine_id);
 
-void pre_diagnosis_manager(MachineList *machine_list, int timestamp, QueuePatient *patient_queue);
+void movePatientToQueue(MachineList *machine_list, int machine_id, QueuePatient *new_queue, Patient *patient);
 
-Patient * machine_done(MachineList *machine_list, int timestamp);
-
+void checkExamDuration(MachineList *machine_list, int timestamp, QueuePatient *patient_queue, QueuePatient *q_patient_outs);
 
 #endif
