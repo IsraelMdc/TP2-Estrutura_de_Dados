@@ -20,6 +20,8 @@ int q_is_empty(QueuePatient *q);
 
 void q_print(QueuePatient *q);
 
+void print_patient(Patient *patient);
+
 char* gen_name();
 
 void pacient_writer(Patient *patient);
@@ -30,7 +32,10 @@ void print_queue_front(QueuePatient *q);
 
 void d_queue_pacient_to_machine(QueuePatient *q, MachineList *machine_list, int timestamp);
 
+Patient *patient_dequeue(QueuePatient *q);
+
 void d_queue(QueuePatient *q);
+
 
 #endif  
 

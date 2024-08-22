@@ -145,6 +145,11 @@ void print_queue_front(QueuePatient *q)
     printf("Patient ID: %d, Name: %s, Timestamp: %d\n", q->front->patient->id, q->front->patient->name, q->front->patient->timestamp);
 }
 
+void print_patient(Patient *patient)
+{
+   printf("Patient ID: %d, Name: %s, Timestamp: %d\n", patient->id, patient->name, patient->timestamp);
+}
+
 void d_queue_pacient_to_machine(QueuePatient *q, MachineList *machine_list, int timestamp)
 {
     if (q_is_empty(q))
@@ -165,6 +170,30 @@ void d_queue_pacient_to_machine(QueuePatient *q, MachineList *machine_list, int 
         }
         current = current->next;
     }
+}
+
+Patient *patient_dequeue(QueuePatient *q)
+{
+   assert(!q_is_empty(q));
+
+   Patient *patient = q->front->patient; // Store the patient data from the front of the queue.
+
+   QueueNodePatient *temp = q->front; // Store the front node of the queue.
+
+   if(q->front != q->rear) // If the front and rear pointers arent equal, there is more than one node in the queue.
+   {
+      q->front = q->front->next;   }
+   else // Otherwise, update the front pointer to the next node in the queue.
+   {
+      
+      q->front = q->rear = NULL; // Set both the front and rear pointers to NULL to indicate an empty queue.
+
+   }
+   
+   free(temp); // Free the memory allocated for the front node.
+   return patient; // Return the patient data that was dequeued.
+
+
 }
 
 void d_queue(QueuePatient *q)

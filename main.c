@@ -28,11 +28,15 @@ int main()
 
 
         }
-        if(machine_is_available(machine_list)){
-            insertPatientOnMachine(machine_list, q_patient, timestamp);
+        if(!q_is_empty(q_patient)){
+            if(machine_is_available(machine_list))
+            {
+            Patient *patient = patient_dequeue(q_patient);
+            insertPatientOnMachine(machine_list, patient, timestamp);
+            }
         }
-
-        pre_diagnosis_manager(machine_list, timestamp, q_patient);
+        
+        //pre_diagnosis_manager(machine_list, timestamp, q_patient);
 
         
         

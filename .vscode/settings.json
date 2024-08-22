@@ -5,6 +5,10 @@
         "typeinfo": "c",
         "stdlib.h": "c",
         "assert.h": "c",
-        "random": "c"
+        "random": "c",
+        "array": "c",
+        "deque": "c",
+        "vector": "c",
+        "string_view": "c"
     }
 }
