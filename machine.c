@@ -48,7 +48,7 @@ MachineList *createMachineList()
 
 void initializeMachinesOnList(MachineList *machine_list)
 {
-    for (int i = 1; i < 6; i++)
+    for (int i = 5; i > 0; --i)
     {
         MachineNode *machine_node = createMachine(i);
         machine_node->next = machine_list->first;
@@ -157,4 +157,25 @@ void pre_diagnosis_manager(MachineList *machine_list, int timestamp, QueuePatien
         }
         node = node->next;
     }
+}
+
+Patient * machine_done(MachineList *machine_list, int timestamp) {
+    printf("TESTE MACHINE DONE");
+    MachineNode *machine_node = machine_list->first;
+    while(machine_node != NULL) {
+        if(machine_node->machine_timestamp + 10 == timestamp) {
+            
+            machine_node->is_occupied = 0;
+            machine_node->machine_timestamp = 0;
+            Patient *patient = machine_node->machine_patient;
+            machine_node->machine_patient = NULL;
+            
+            return patient;
+        }
+
+        machine_node = machine_node->next;
+
+    }
+
+    return NULL;
 }

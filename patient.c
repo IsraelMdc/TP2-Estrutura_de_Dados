@@ -208,3 +208,19 @@ void d_queue(QueuePatient *q)
     print_queue_front(q);
     free(temp);
 }
+
+int patient_Creation(int id, int timestamp, QueuePatient *q_patient)
+{
+   
+   int patient_arrival = gen_randint(1, 100);
+   printf("Patient arrival chance: %d\n", patient_arrival);
+   if (patient_arrival >= 80)
+   {
+      Patient *patient = createPatient(id, timestamp);
+      id++; 
+      pacient_writer(patient);
+      q_enqueue(q_patient, patient);
+      
+   }
+   return id;
+}

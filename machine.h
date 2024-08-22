@@ -26,5 +26,7 @@ void removePatientFromMachine(MachineList *machine_list, int machine_id);
 
 void pre_diagnosis_manager(MachineList *machine_list, int timestamp, QueuePatient *patient_queue);
 
+Patient * machine_done(MachineList *machine_list, int timestamp);
+
 
 #endif

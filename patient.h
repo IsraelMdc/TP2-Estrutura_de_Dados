@@ -36,6 +36,8 @@ Patient *patient_dequeue(QueuePatient *q);
 
 void d_queue(QueuePatient *q);
 
+int patient_Creation(int id, int timestamp, QueuePatient *q_patient);
+
 
 #endif  
 
