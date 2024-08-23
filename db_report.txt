@@ -1,0 +1,156 @@
+Report ID: 1, Exam ID: 1, Condition: bronquite, Timestamp: 11
+Report ID: 2, Exam ID: 6, Condition: saude normal, Timestamp: 41
+Report ID: 3, Exam ID: 8, Condition: Cancer de pulmao, Timestamp: 71
+Report ID: 4, Exam ID: 11, Condition: Cancer de pulmao, Timestamp: 101
+Report ID: 5, Exam ID: 13, Condition: Cancer de pulmao, Timestamp: 131
+Report ID: 6, Exam ID: 15, Condition: Cancer de pulmao, Timestamp: 161
+Report ID: 7, Exam ID: 19, Condition: bronquite, Timestamp: 191
+Report ID: 8, Exam ID: 22, Condition: Cancer de pulmao, Timestamp: 221
+Report ID: 9, Exam ID: 42, Condition: Cancer de pulmao, Timestamp: 251
+Report ID: 10, Exam ID: 52, Condition: pneumonia, Timestamp: 281
+Report ID: 11, Exam ID: 59, Condition: saude normal, Timestamp: 311
+Report ID: 12, Exam ID: 7, Condition: Fibrose pulmonar, Timestamp: 341
+Report ID: 13, Exam ID: 78, Condition: Cancer de pulmao, Timestamp: 371
+Report ID: 14, Exam ID: 83, Condition: Cancer de pulmao, Timestamp: 401
+Report ID: 15, Exam ID: 89, Condition: Cancer de pulmao, Timestamp: 431
+Report ID: 16, Exam ID: 96, Condition: Cancer de pulmao, Timestamp: 461
+Report ID: 17, Exam ID: 14, Condition: saude normal, Timestamp: 491
+Report ID: 18, Exam ID: 36, Condition: Tuberculose, Timestamp: 521
+Report ID: 19, Exam ID: 112, Condition: saude normal, Timestamp: 551
+Report ID: 20, Exam ID: 124, Condition: Cancer de pulmao, Timestamp: 581
+Report ID: 21, Exam ID: 38, Condition: Tuberculose, Timestamp: 611
+Report ID: 22, Exam ID: 142, Condition: Cancer de pulmao, Timestamp: 641
+Report ID: 23, Exam ID: 147, Condition: Cancer de pulmao, Timestamp: 671
+Report ID: 24, Exam ID: 49, Condition: Fibrose pulmonar, Timestamp: 701
+Report ID: 25, Exam ID: 158, Condition: Embolia pulmonar, Timestamp: 731
+Report ID: 26, Exam ID: 164, Condition: Cancer de pulmao, Timestamp: 761
+Report ID: 27, Exam ID: 167, Condition: Cancer de pulmao, Timestamp: 791
+Report ID: 28, Exam ID: 171, Condition: Cancer de pulmao, Timestamp: 821
+Report ID: 29, Exam ID: 181, Condition: Cancer de pulmao, Timestamp: 851
+Report ID: 30, Exam ID: 191, Condition: Cancer de pulmao, Timestamp: 881
+Report ID: 31, Exam ID: 51, Condition: Tuberculose, Timestamp: 911
+Report ID: 32, Exam ID: 205, Condition: Cancer de pulmao, Timestamp: 941
+Report ID: 33, Exam ID: 209, Condition: bronquite, Timestamp: 971
+Report ID: 1, Exam ID: 1, Condition: bronquite, Timestamp: 11
+Report ID: 2, Exam ID: 6, Condition: saude normal, Timestamp: 41
+Report ID: 3, Exam ID: 8, Condition: Cancer de pulmao, Timestamp: 71
+Report ID: 4, Exam ID: 11, Condition: Cancer de pulmao, Timestamp: 101
+Report ID: 5, Exam ID: 13, Condition: Cancer de pulmao, Timestamp: 131
+Report ID: 6, Exam ID: 15, Condition: Cancer de pulmao, Timestamp: 161
+Report ID: 7, Exam ID: 19, Condition: bronquite, Timestamp: 191
+Report ID: 8, Exam ID: 22, Condition: Cancer de pulmao, Timestamp: 221
+Report ID: 9, Exam ID: 42, Condition: Cancer de pulmao, Timestamp: 251
+Report ID: 10, Exam ID: 52, Condition: pneumonia, Timestamp: 281
+Report ID: 11, Exam ID: 59, Condition: saude normal, Timestamp: 311
+Report ID: 12, Exam ID: 7, Condition: Fibrose pulmonar, Timestamp: 341
+Report ID: 13, Exam ID: 78, Condition: Cancer de pulmao, Timestamp: 371
+Report ID: 14, Exam ID: 83, Condition: Cancer de pulmao, Timestamp: 401
+Report ID: 15, Exam ID: 89, Condition: Cancer de pulmao, Timestamp: 431
+Report ID: 16, Exam ID: 96, Condition: Cancer de pulmao, Timestamp: 461
+Report ID: 17, Exam ID: 14, Condition: saude normal, Timestamp: 491
+Report ID: 18, Exam ID: 36, Condition: Tuberculose, Timestamp: 521
+Report ID: 19, Exam ID: 112, Condition: saude normal, Timestamp: 551
+Report ID: 20, Exam ID: 124, Condition: Cancer de pulmao, Timestamp: 581
+Report ID: 21, Exam ID: 38, Condition: Tuberculose, Timestamp: 611
+Report ID: 22, Exam ID: 142, Condition: Cancer de pulmao, Timestamp: 641
+Report ID: 23, Exam ID: 147, Condition: Cancer de pulmao, Timestamp: 671
+Report ID: 24, Exam ID: 49, Condition: Fibrose pulmonar, Timestamp: 701
+Report ID: 25, Exam ID: 158, Condition: Embolia pulmonar, Timestamp: 731
+Report ID: 26, Exam ID: 164, Condition: Cancer de pulmao, Timestamp: 761
+Report ID: 27, Exam ID: 167, Condition: Cancer de pulmao, Timestamp: 791
+Report ID: 28, Exam ID: 171, Condition: Cancer de pulmao, Timestamp: 821
+Report ID: 29, Exam ID: 181, Condition: Cancer de pulmao, Timestamp: 851
+Report ID: 30, Exam ID: 191, Condition: Cancer de pulmao, Timestamp: 881
+Report ID: 31, Exam ID: 51, Condition: Tuberculose, Timestamp: 911
+Report ID: 32, Exam ID: 205, Condition: Cancer de pulmao, Timestamp: 941
+Report ID: 33, Exam ID: 209, Condition: bronquite, Timestamp: 971
+Report ID: 1, Exam ID: 1, Condition: bronquite, Timestamp: 11
+Report ID: 2, Exam ID: 6, Condition: saude normal, Timestamp: 41
+Report ID: 3, Exam ID: 8, Condition: Cancer de pulmao, Timestamp: 71
+Report ID: 4, Exam ID: 11, Condition: Cancer de pulmao, Timestamp: 101
+Report ID: 5, Exam ID: 13, Condition: Cancer de pulmao, Timestamp: 131
+Report ID: 6, Exam ID: 15, Condition: Cancer de pulmao, Timestamp: 161
+Report ID: 7, Exam ID: 19, Condition: bronquite, Timestamp: 191
+Report ID: 8, Exam ID: 22, Condition: Cancer de pulmao, Timestamp: 221
+Report ID: 9, Exam ID: 42, Condition: Cancer de pulmao, Timestamp: 251
+Report ID: 10, Exam ID: 52, Condition: pneumonia, Timestamp: 281
+Report ID: 11, Exam ID: 59, Condition: saude normal, Timestamp: 311
+Report ID: 12, Exam ID: 7, Condition: Fibrose pulmonar, Timestamp: 341
+Report ID: 13, Exam ID: 78, Condition: Cancer de pulmao, Timestamp: 371
+Report ID: 14, Exam ID: 83, Condition: Cancer de pulmao, Timestamp: 401
+Report ID: 15, Exam ID: 89, Condition: Cancer de pulmao, Timestamp: 431
+Report ID: 16, Exam ID: 96, Condition: Cancer de pulmao, Timestamp: 461
+Report ID: 17, Exam ID: 14, Condition: saude normal, Timestamp: 491
+Report ID: 18, Exam ID: 36, Condition: Tuberculose, Timestamp: 521
+Report ID: 19, Exam ID: 112, Condition: saude normal, Timestamp: 551
+Report ID: 20, Exam ID: 124, Condition: Cancer de pulmao, Timestamp: 581
+Report ID: 21, Exam ID: 38, Condition: Tuberculose, Timestamp: 611
+Report ID: 22, Exam ID: 142, Condition: Cancer de pulmao, Timestamp: 641
+Report ID: 23, Exam ID: 147, Condition: Cancer de pulmao, Timestamp: 671
+Report ID: 24, Exam ID: 49, Condition: Fibrose pulmonar, Timestamp: 701
+Report ID: 25, Exam ID: 158, Condition: Embolia pulmonar, Timestamp: 731
+Report ID: 26, Exam ID: 164, Condition: Cancer de pulmao, Timestamp: 761
+Report ID: 27, Exam ID: 167, Condition: Cancer de pulmao, Timestamp: 791
+Report ID: 28, Exam ID: 171, Condition: Cancer de pulmao, Timestamp: 821
+Report ID: 29, Exam ID: 181, Condition: Cancer de pulmao, Timestamp: 851
+Report ID: 30, Exam ID: 191, Condition: Cancer de pulmao, Timestamp: 881
+Report ID: 31, Exam ID: 51, Condition: Tuberculose, Timestamp: 911
+Report ID: 32, Exam ID: 205, Condition: Cancer de pulmao, Timestamp: 941
+Report ID: 33, Exam ID: 209, Condition: bronquite, Timestamp: 971
+Report ID: 1, Exam ID: 1, Condition: bronquite, Timestamp: 11
+Report ID: 2, Exam ID: 6, Condition: saude normal, Timestamp: 41
+Report ID: 3, Exam ID: 8, Condition: Cancer de pulmao, Timestamp: 71
+Report ID: 4, Exam ID: 11, Condition: Cancer de pulmao, Timestamp: 101
+Report ID: 5, Exam ID: 13, Condition: Cancer de pulmao, Timestamp: 131
+Report ID: 6, Exam ID: 15, Condition: Cancer de pulmao, Timestamp: 161
+Report ID: 7, Exam ID: 19, Condition: bronquite, Timestamp: 191
+Report ID: 8, Exam ID: 22, Condition: Cancer de pulmao, Timestamp: 221
+Report ID: 9, Exam ID: 42, Condition: Cancer de pulmao, Timestamp: 251
+Report ID: 10, Exam ID: 52, Condition: pneumonia, Timestamp: 281
+Report ID: 11, Exam ID: 59, Condition: saude normal, Timestamp: 311
+Report ID: 12, Exam ID: 7, Condition: Fibrose pulmonar, Timestamp: 341
+Report ID: 13, Exam ID: 78, Condition: Cancer de pulmao, Timestamp: 371
+Report ID: 14, Exam ID: 83, Condition: Cancer de pulmao, Timestamp: 401
+Report ID: 15, Exam ID: 89, Condition: Cancer de pulmao, Timestamp: 431
+Report ID: 16, Exam ID: 96, Condition: Cancer de pulmao, Timestamp: 461
+Report ID: 17, Exam ID: 14, Condition: saude normal, Timestamp: 491
+Report ID: 18, Exam ID: 36, Condition: Tuberculose, Timestamp: 521
+Report ID: 19, Exam ID: 112, Condition: saude normal, Timestamp: 551
+Report ID: 20, Exam ID: 124, Condition: Cancer de pulmao, Timestamp: 581
+Report ID: 21, Exam ID: 38, Condition: Tuberculose, Timestamp: 611
+Report ID: 22, Exam ID: 142, Condition: Cancer de pulmao, Timestamp: 641
+Report ID: 23, Exam ID: 147, Condition: Cancer de pulmao, Timestamp: 671
+Report ID: 24, Exam ID: 49, Condition: Fibrose pulmonar, Timestamp: 701
+Report ID: 25, Exam ID: 158, Condition: Embolia pulmonar, Timestamp: 731
+Report ID: 26, Exam ID: 164, Condition: Cancer de pulmao, Timestamp: 761
+Report ID: 27, Exam ID: 167, Condition: Cancer de pulmao, Timestamp: 791
+Report ID: 28, Exam ID: 171, Condition: Cancer de pulmao, Timestamp: 821
+Report ID: 29, Exam ID: 181, Condition: Cancer de pulmao, Timestamp: 851
+Report ID: 30, Exam ID: 191, Condition: Cancer de pulmao, Timestamp: 881
+Report ID: 31, Exam ID: 51, Condition: Tuberculose, Timestamp: 911
+Report ID: 32, Exam ID: 205, Condition: Cancer de pulmao, Timestamp: 941
+Report ID: 33, Exam ID: 209, Condition: bronquite, Timestamp: 971
+Report ID: 1, Exam ID: 1, Condition: bronquite, Timestamp: 11
+Report ID: 2, Exam ID: 6, Condition: saude normal, Timestamp: 41
+Report ID: 3, Exam ID: 8, Condition: Cancer de pulmao, Timestamp: 71
+Report ID: 4, Exam ID: 11, Condition: Cancer de pulmao, Timestamp: 101
+Report ID: 5, Exam ID: 13, Condition: Cancer de pulmao, Timestamp: 131
+Report ID: 6, Exam ID: 15, Condition: Cancer de pulmao, Timestamp: 161
+Report ID: 7, Exam ID: 19, Condition: bronquite, Timestamp: 191
+Report ID: 8, Exam ID: 22, Condition: Cancer de pulmao, Timestamp: 221
+Report ID: 9, Exam ID: 42, Condition: Cancer de pulmao, Timestamp: 251
+Report ID: 10, Exam ID: 52, Condition: pneumonia, Timestamp: 281
+Report ID: 11, Exam ID: 59, Condition: saude normal, Timestamp: 311
+Report ID: 12, Exam ID: 7, Condition: Fibrose pulmonar, Timestamp: 341
+Report ID: 13, Exam ID: 78, Condition: Cancer de pulmao, Timestamp: 371
+Report ID: 14, Exam ID: 83, Condition: Cancer de pulmao, Timestamp: 401
+Report ID: 15, Exam ID: 89, Condition: Cancer de pulmao, Timestamp: 431
+Report ID: 16, Exam ID: 96, Condition: Cancer de pulmao, Timestamp: 461
+Report ID: 17, Exam ID: 14, Condition: saude normal, Timestamp: 491
+Report ID: 1, Exam ID: 1, Condition: bronquite, Timestamp: 11
+Report ID: 2, Exam ID: 6, Condition: saude normal, Timestamp: 41
+Report ID: 3, Exam ID: 8, Condition: Cancer de pulmao, Timestamp: 71
+Report ID: 4, Exam ID: 11, Condition: Cancer de pulmao, Timestamp: 101
+Report ID: 5, Exam ID: 13, Condition: Cancer de pulmao, Timestamp: 131
+Report ID: 6, Exam ID: 15, Condition: Cancer de pulmao, Timestamp: 161
+Report ID: 7, Exam ID: 19, Condition: bronquite, Timestamp: 191

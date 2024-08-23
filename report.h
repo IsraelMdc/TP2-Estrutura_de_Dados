@@ -8,7 +8,7 @@ typedef struct report Report;
 
 // Report* start_report(int report_id, int exam_id, char condition_IA, int timestamp);
 
-int create_report(Exam *exam, int report_id);
+Report *create_report(Exam *exam, int report_id, int timestamp);
 
 void condition_report(Report *report, Exam *exam);
 

@@ -83,17 +83,39 @@ void enqueueExamPriorityQueue(ExamPriorityQueue *queue, Exam *exam)
     }
 }
 
-Exam *dequeueExamPriorityQueue(ExamPriorityQueue *queue)
+// Exam *dequeueExamPriorityQueue(ExamPriorityQueue *queue)
+// {
+//     assert(!isEmptyExamPriorityQueue(queue));
+
+//     Exam *exam = queue->front->exam; // Store the exam data from the front of the queue.
+
+//     ExamNodePriorityQueue *temp = queue->front; // Store the front node of the queue.
+//     queue->front = queue->front->next; // Update the front pointer to the next node in the queue.
+
+//     free(temp); // Free the memory allocated for the front node.
+//     return exam; // Return the exam data that was dequeued.
+// }
+
+Exam *dequeueExamPriorityQueue(ExamPriorityQueue *q)
 {
-    assert(!isEmptyExamPriorityQueue(queue));
+    assert(!isEmptyExamPriorityQueue(q));
 
-    Exam *exam = queue->front->exam; // Store the exam data from the front of the queue.
+    Exam *exam = q->front->exam; // Store the exam data from the front of the queue.
 
-    ExamNodePriorityQueue *temp = queue->front; // Store the front node of the queue.
-    queue->front = queue->front->next; // Update the front pointer to the next node in the queue.
+    ExamNodePriorityQueue *temp = q->front; // Store the front node of the queue.
+
+    if(q->front != q->rear) // If the front and rear pointers arent equal, there is more than one node in the queue.
+    {
+        q->front = q->front->next;   
+    }
+
+    else // Otherwise, update the front pointer to the next node in the queue.
+    { 
+        q->front = q->rear = NULL; // Set both the front and rear pointers to NULL to indicate an empty queue.
+    }
 
     free(temp); // Free the memory allocated for the front node.
-    return exam; // Return the exam data that was dequeued.
+    return exam; 
 }
 
 int isEmptyExamPriorityQueue(ExamPriorityQueue *queue)
@@ -120,6 +142,10 @@ int get_exam_id(Exam *exam)
     return exam->exam_id;
 }
 
+int get_exam_timestamp(Exam *exam)
+{
+    return exam->timestamp;
+}
 void exam_condition(Exam *exam)
 {
     int chance = gen_randint(1, 100);
@@ -228,25 +254,6 @@ void exam_writer(Exam *exam)
 //       q->rear = node;
 //    }
 // };
-
-// Exam *q_exam_dequeue(QueueExam *q)
-// {
-//    assert(!q_is_empty_exam(q));
-
-//    Exam *exam = q->front->exam; // Store the exam data from the front of the queue.
-
-//    QueueNodeExam *temp = q->front; // Store the front node of the queue.
-
-//    if(q->front != q->rear) // If the front and rear pointers arent equal, there is more than one node in the queue.
-//    {
-//       q->front = q->front->next;   }
-
-//    else // Otherwise, update the front pointer to the next node in the queue.
-//    {
-      
-//       q->front = q->rear = NULL; // Set both the front and rear pointers to NULL to indicate an empty queue.
-
-//    }
    
 //    free(temp); // Free the memory allocated for the front node.
 //    return exam; // Return the exam data that was dequeued.
