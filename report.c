@@ -15,25 +15,38 @@ struct report{
 
 };
 
-Report* start_report(int report_id, int exam_id, char condition_IA, int timestamp){
-    Report *report = (Report*)malloc(sizeof(Report));
-    assert(report != NULL);
+// Report* start_report(int report_id, int exam_id, char condition_IA, int timestamp)
+// {
+//     Report *report = (Report*)malloc(sizeof(Report));
+//     assert(report != NULL);
 
-    report->report_id;
-    report->exam_id;
-    report->condition_IA;
-    report->timestamp;
+//     report->report_id;
+//     report->exam_id;
+//     report->condition_IA;
+//     report->timestamp;
 
-    return report;
-}
-
-
-void create_report(ExamPriorityQueue *exam_priority_queue){
-
-    double p = (double) rand() / (double)RAND_MAX;
+//     return report;
+// }
 
 
+int create_report(Exam *exam, int report_id, int timestamp)
+{
+    Report *report = (Report *)malloc(sizeof(Report));
+    int p = gen_randint(1, 10);
 
+    if (p < 8)
+    {
+        strcpy(report->condition_IA, get_exam_condition(exam));
+    }
+    else
+    {
+        condition_report(report, exam);
+    }
+    report->report_id = report_id;
+    report->exam_id = get_exam_id(exam);
+    report->timestamp = timestamp;
+
+    return report_id++;
 }
 
 void condition_report(Report *report, Exam *exam)
@@ -83,8 +96,7 @@ void condition_report(Report *report, Exam *exam)
     {
         strcpy(report->condition_IA, "Cancer de pulmao");
     }
-
-    if (report->condition_IA == exam->condition_IA) {
+    if (report->condition_IA == get_exam_condition(exam)) {
         condition_report(report, exam);
     }
 }
@@ -102,8 +114,9 @@ void write_report(Report *report)
       printf("Error opening the file %s", filename);
       return;
    }
+
    // write to the text file
-   fprintf(fp, "Report ID: %d,Timestamp: %d\n", report->report_id, report->timestamp);
+   fprintf(fp, "Report ID: %d, Exam ID: %d, Condition: %s, Timestamp: %d\n", report->report_id, report->exam_id, report->condition_IA, report->timestamp);
 
    // close the file
    fclose(fp);

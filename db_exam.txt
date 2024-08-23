@@ -2484,3 +2484,615 @@ Exam id 223, Machine id 2, Patient id 223, Condition COVID, Timestamp 986, Gravi
 Exam id 224, Machine id 3, Patient id 224, Condition pneumonia, Timestamp 989, Gravidade 3
 Exam id 225, Machine id 4, Patient id 225, Condition saude normal, Timestamp 992, Gravidade 1
 Exam id 226, Machine id 1, Patient id 226, Condition pneumonia, Timestamp 999, Gravidade 3
+Exam id 1, Machine id 1, Patient id 1, Condition bronquite, Timestamp 11, Gravidade 2
+Exam id 2, Machine id 2, Patient id 2, Condition COVID, Timestamp 13, Gravidade 4
+Exam id 3, Machine id 3, Patient id 3, Condition Fibrose pulmonar, Timestamp 14, Gravidade 5
+Exam id 4, Machine id 4, Patient id 4, Condition COVID, Timestamp 17, Gravidade 4
+Exam id 5, Machine id 1, Patient id 5, Condition saude normal, Timestamp 35, Gravidade 1
+Exam id 6, Machine id 2, Patient id 6, Condition Fibrose pulmonar, Timestamp 41, Gravidade 5
+Exam id 7, Machine id 1, Patient id 7, Condition saude normal, Timestamp 46, Gravidade 1
+Exam id 8, Machine id 3, Patient id 8, Condition COVID, Timestamp 50, Gravidade 4
+Exam id 9, Machine id 1, Patient id 9, Condition Cancer de pulmao, Timestamp 59, Gravidade 6
+Exam id 10, Machine id 2, Patient id 10, Condition saude normal, Timestamp 65, Gravidade 1
+Exam id 11, Machine id 3, Patient id 11, Condition Derrame pleural, Timestamp 67, Gravidade 4
+Exam id 12, Machine id 1, Patient id 12, Condition saude normal, Timestamp 76, Gravidade 1
+Exam id 13, Machine id 2, Patient id 13, Condition saude normal, Timestamp 77, Gravidade 1
+Exam id 14, Machine id 3, Patient id 14, Condition saude normal, Timestamp 80, Gravidade 1
+Exam id 15, Machine id 4, Patient id 15, Condition pneumonia, Timestamp 81, Gravidade 3
+Exam id 16, Machine id 5, Patient id 16, Condition saude normal, Timestamp 83, Gravidade 1
+Exam id 17, Machine id 1, Patient id 17, Condition saude normal, Timestamp 87, Gravidade 1
+Exam id 18, Machine id 2, Patient id 18, Condition saude normal, Timestamp 88, Gravidade 1
+Exam id 19, Machine id 3, Patient id 19, Condition bronquite, Timestamp 92, Gravidade 2
+Exam id 20, Machine id 4, Patient id 20, Condition bronquite, Timestamp 94, Gravidade 2
+Exam id 21, Machine id 1, Patient id 21, Condition saude normal, Timestamp 104, Gravidade 1
+Exam id 22, Machine id 2, Patient id 22, Condition bronquite, Timestamp 109, Gravidade 2
+Exam id 23, Machine id 3, Patient id 23, Condition saude normal, Timestamp 113, Gravidade 1
+Exam id 24, Machine id 1, Patient id 24, Condition Cancer de pulmao, Timestamp 116, Gravidade 6
+Exam id 25, Machine id 4, Patient id 25, Condition bronquite, Timestamp 117, Gravidade 2
+Exam id 26, Machine id 1, Patient id 26, Condition saude normal, Timestamp 129, Gravidade 1
+Exam id 27, Machine id 1, Patient id 27, Condition bronquite, Timestamp 144, Gravidade 2
+Exam id 28, Machine id 2, Patient id 28, Condition saude normal, Timestamp 146, Gravidade 1
+Exam id 29, Machine id 3, Patient id 29, Condition saude normal, Timestamp 148, Gravidade 1
+Exam id 30, Machine id 4, Patient id 30, Condition saude normal, Timestamp 152, Gravidade 1
+Exam id 31, Machine id 5, Patient id 31, Condition saude normal, Timestamp 154, Gravidade 1
+Exam id 32, Machine id 1, Patient id 32, Condition bronquite, Timestamp 156, Gravidade 2
+Exam id 33, Machine id 2, Patient id 33, Condition bronquite, Timestamp 160, Gravidade 2
+Exam id 34, Machine id 1, Patient id 34, Condition bronquite, Timestamp 176, Gravidade 2
+Exam id 35, Machine id 2, Patient id 35, Condition COVID, Timestamp 183, Gravidade 4
+Exam id 36, Machine id 1, Patient id 36, Condition bronquite, Timestamp 187, Gravidade 2
+Exam id 37, Machine id 3, Patient id 37, Condition Derrame pleural, Timestamp 188, Gravidade 4
+Exam id 38, Machine id 4, Patient id 38, Condition Tuberculose, Timestamp 189, Gravidade 5
+Exam id 39, Machine id 5, Patient id 39, Condition bronquite, Timestamp 190, Gravidade 2
+Exam id 40, Machine id 2, Patient id 40, Condition saude normal, Timestamp 194, Gravidade 1
+Exam id 41, Machine id 1, Patient id 41, Condition saude normal, Timestamp 198, Gravidade 1
+Exam id 42, Machine id 3, Patient id 42, Condition saude normal, Timestamp 199, Gravidade 1
+Exam id 43, Machine id 2, Patient id 43, Condition saude normal, Timestamp 206, Gravidade 1
+Exam id 44, Machine id 1, Patient id 44, Condition COVID, Timestamp 210, Gravidade 4
+Exam id 45, Machine id 2, Patient id 45, Condition Cancer de pulmao, Timestamp 218, Gravidade 6
+Exam id 46, Machine id 1, Patient id 46, Condition saude normal, Timestamp 221, Gravidade 1
+Exam id 47, Machine id 3, Patient id 47, Condition bronquite, Timestamp 222, Gravidade 2
+Exam id 48, Machine id 4, Patient id 48, Condition Derrame pleural, Timestamp 226, Gravidade 4
+Exam id 49, Machine id 2, Patient id 49, Condition Derrame pleural, Timestamp 230, Gravidade 4
+Exam id 50, Machine id 5, Patient id 50, Condition saude normal, Timestamp 231, Gravidade 1
+Exam id 51, Machine id 1, Patient id 51, Condition COVID, Timestamp 234, Gravidade 4
+Exam id 52, Machine id 2, Patient id 52, Condition Fibrose pulmonar, Timestamp 241, Gravidade 5
+Exam id 53, Machine id 1, Patient id 53, Condition COVID, Timestamp 256, Gravidade 4
+Exam id 54, Machine id 2, Patient id 54, Condition bronquite, Timestamp 258, Gravidade 2
+Exam id 55, Machine id 3, Patient id 55, Condition saude normal, Timestamp 265, Gravidade 1
+Exam id 56, Machine id 1, Patient id 56, Condition COVID, Timestamp 269, Gravidade 4
+Exam id 57, Machine id 2, Patient id 57, Condition saude normal, Timestamp 270, Gravidade 1
+Exam id 58, Machine id 4, Patient id 58, Condition bronquite, Timestamp 272, Gravidade 2
+Exam id 59, Machine id 5, Patient id 59, Condition saude normal, Timestamp 273, Gravidade 1
+Exam id 60, Machine id 3, Patient id 60, Condition saude normal, Timestamp 276, Gravidade 1
+Exam id 61, Machine id 1, Patient id 61, Condition bronquite, Timestamp 284, Gravidade 2
+Exam id 62, Machine id 2, Patient id 62, Condition bronquite, Timestamp 290, Gravidade 2
+Exam id 63, Machine id 1, Patient id 63, Condition Tuberculose, Timestamp 295, Gravidade 5
+Exam id 64, Machine id 3, Patient id 64, Condition Cancer de pulmao, Timestamp 300, Gravidade 6
+Exam id 65, Machine id 1, Patient id 65, Condition saude normal, Timestamp 307, Gravidade 1
+Exam id 66, Machine id 2, Patient id 66, Condition Cancer de pulmao, Timestamp 311, Gravidade 6
+Exam id 67, Machine id 1, Patient id 67, Condition saude normal, Timestamp 320, Gravidade 1
+Exam id 68, Machine id 2, Patient id 68, Condition bronquite, Timestamp 325, Gravidade 2
+Exam id 69, Machine id 1, Patient id 69, Condition Tuberculose, Timestamp 331, Gravidade 5
+Exam id 70, Machine id 3, Patient id 70, Condition saude normal, Timestamp 333, Gravidade 1
+Exam id 71, Machine id 2, Patient id 71, Condition Tuberculose, Timestamp 336, Gravidade 5
+Exam id 72, Machine id 4, Patient id 72, Condition bronquite, Timestamp 338, Gravidade 2
+Exam id 73, Machine id 1, Patient id 73, Condition saude normal, Timestamp 344, Gravidade 1
+Exam id 74, Machine id 2, Patient id 74, Condition bronquite, Timestamp 351, Gravidade 2
+Exam id 75, Machine id 3, Patient id 75, Condition Tuberculose, Timestamp 354, Gravidade 5
+Exam id 76, Machine id 1, Patient id 76, Condition bronquite, Timestamp 362, Gravidade 2
+Exam id 77, Machine id 2, Patient id 77, Condition Fibrose pulmonar, Timestamp 365, Gravidade 5
+Exam id 78, Machine id 1, Patient id 78, Condition Cancer de pulmao, Timestamp 374, Gravidade 6
+Exam id 79, Machine id 2, Patient id 79, Condition saude normal, Timestamp 376, Gravidade 1
+Exam id 80, Machine id 3, Patient id 80, Condition Embolia pulmonar, Timestamp 377, Gravidade 4
+Exam id 81, Machine id 4, Patient id 81, Condition bronquite, Timestamp 381, Gravidade 2
+Exam id 82, Machine id 5, Patient id 82, Condition saude normal, Timestamp 384, Gravidade 1
+Exam id 83, Machine id 1, Patient id 83, Condition Cancer de pulmao, Timestamp 388, Gravidade 6
+Exam id 84, Machine id 2, Patient id 84, Condition Derrame pleural, Timestamp 394, Gravidade 4
+Exam id 85, Machine id 1, Patient id 85, Condition pneumonia, Timestamp 401, Gravidade 3
+Exam id 86, Machine id 2, Patient id 86, Condition bronquite, Timestamp 406, Gravidade 2
+Exam id 87, Machine id 3, Patient id 87, Condition saude normal, Timestamp 408, Gravidade 1
+Exam id 88, Machine id 4, Patient id 88, Condition Tuberculose, Timestamp 411, Gravidade 5
+Exam id 89, Machine id 1, Patient id 89, Condition saude normal, Timestamp 420, Gravidade 1
+Exam id 90, Machine id 2, Patient id 90, Condition Tuberculose, Timestamp 423, Gravidade 5
+Exam id 91, Machine id 3, Patient id 91, Condition saude normal, Timestamp 424, Gravidade 1
+Exam id 92, Machine id 4, Patient id 92, Condition bronquite, Timestamp 427, Gravidade 2
+Exam id 93, Machine id 5, Patient id 93, Condition Embolia pulmonar, Timestamp 428, Gravidade 4
+Exam id 94, Machine id 1, Patient id 94, Condition bronquite, Timestamp 432, Gravidade 2
+Exam id 95, Machine id 2, Patient id 95, Condition Embolia pulmonar, Timestamp 436, Gravidade 4
+Exam id 96, Machine id 3, Patient id 96, Condition Tuberculose, Timestamp 438, Gravidade 5
+Exam id 97, Machine id 4, Patient id 97, Condition pneumonia, Timestamp 441, Gravidade 3
+Exam id 98, Machine id 1, Patient id 98, Condition bronquite, Timestamp 445, Gravidade 2
+Exam id 99, Machine id 2, Patient id 99, Condition Derrame pleural, Timestamp 449, Gravidade 4
+Exam id 100, Machine id 3, Patient id 100, Condition saude normal, Timestamp 454, Gravidade 1
+Exam id 101, Machine id 1, Patient id 101, Condition bronquite, Timestamp 460, Gravidade 2
+Exam id 102, Machine id 2, Patient id 102, Condition saude normal, Timestamp 468, Gravidade 1
+Exam id 103, Machine id 3, Patient id 103, Condition bronquite, Timestamp 470, Gravidade 2
+Exam id 104, Machine id 1, Patient id 104, Condition saude normal, Timestamp 472, Gravidade 1
+Exam id 105, Machine id 2, Patient id 105, Condition Embolia pulmonar, Timestamp 482, Gravidade 4
+Exam id 106, Machine id 1, Patient id 106, Condition saude normal, Timestamp 485, Gravidade 1
+Exam id 107, Machine id 3, Patient id 107, Condition COVID, Timestamp 490, Gravidade 4
+Exam id 108, Machine id 1, Patient id 108, Condition bronquite, Timestamp 510, Gravidade 2
+Exam id 109, Machine id 2, Patient id 109, Condition pneumonia, Timestamp 513, Gravidade 3
+Exam id 110, Machine id 3, Patient id 110, Condition Tuberculose, Timestamp 514, Gravidade 5
+Exam id 111, Machine id 4, Patient id 111, Condition bronquite, Timestamp 516, Gravidade 2
+Exam id 112, Machine id 1, Patient id 112, Condition pneumonia, Timestamp 524, Gravidade 3
+Exam id 113, Machine id 2, Patient id 113, Condition Fibrose pulmonar, Timestamp 528, Gravidade 5
+Exam id 114, Machine id 3, Patient id 114, Condition saude normal, Timestamp 530, Gravidade 1
+Exam id 115, Machine id 4, Patient id 115, Condition bronquite, Timestamp 531, Gravidade 2
+Exam id 116, Machine id 1, Patient id 116, Condition Cancer de pulmao, Timestamp 535, Gravidade 6
+Exam id 117, Machine id 2, Patient id 117, Condition Tuberculose, Timestamp 539, Gravidade 5
+Exam id 118, Machine id 5, Patient id 118, Condition Fibrose pulmonar, Timestamp 540, Gravidade 5
+Exam id 119, Machine id 3, Patient id 119, Condition COVID, Timestamp 541, Gravidade 4
+Exam id 120, Machine id 4, Patient id 120, Condition Fibrose pulmonar, Timestamp 543, Gravidade 5
+Exam id 121, Machine id 1, Patient id 121, Condition Cancer de pulmao, Timestamp 546, Gravidade 6
+Exam id 122, Machine id 2, Patient id 122, Condition bronquite, Timestamp 550, Gravidade 2
+Exam id 123, Machine id 3, Patient id 123, Condition saude normal, Timestamp 555, Gravidade 1
+Exam id 124, Machine id 1, Patient id 124, Condition Tuberculose, Timestamp 557, Gravidade 5
+Exam id 125, Machine id 4, Patient id 125, Condition bronquite, Timestamp 560, Gravidade 2
+Exam id 126, Machine id 2, Patient id 126, Condition saude normal, Timestamp 562, Gravidade 1
+Exam id 127, Machine id 3, Patient id 127, Condition pneumonia, Timestamp 566, Gravidade 3
+Exam id 128, Machine id 1, Patient id 128, Condition Cancer de pulmao, Timestamp 573, Gravidade 6
+Exam id 129, Machine id 2, Patient id 129, Condition bronquite, Timestamp 574, Gravidade 2
+Exam id 130, Machine id 3, Patient id 130, Condition COVID, Timestamp 581, Gravidade 4
+Exam id 131, Machine id 4, Patient id 131, Condition Derrame pleural, Timestamp 582, Gravidade 4
+Exam id 132, Machine id 1, Patient id 132, Condition pneumonia, Timestamp 585, Gravidade 3
+Exam id 133, Machine id 2, Patient id 133, Condition saude normal, Timestamp 592, Gravidade 1
+Exam id 134, Machine id 1, Patient id 134, Condition bronquite, Timestamp 598, Gravidade 2
+Exam id 135, Machine id 2, Patient id 135, Condition bronquite, Timestamp 604, Gravidade 2
+Exam id 136, Machine id 3, Patient id 136, Condition pneumonia, Timestamp 606, Gravidade 3
+Exam id 137, Machine id 1, Patient id 137, Condition saude normal, Timestamp 611, Gravidade 1
+Exam id 138, Machine id 2, Patient id 138, Condition saude normal, Timestamp 618, Gravidade 1
+Exam id 139, Machine id 1, Patient id 139, Condition COVID, Timestamp 624, Gravidade 4
+Exam id 140, Machine id 2, Patient id 140, Condition COVID, Timestamp 630, Gravidade 4
+Exam id 141, Machine id 3, Patient id 141, Condition Tuberculose, Timestamp 631, Gravidade 5
+Exam id 142, Machine id 1, Patient id 142, Condition COVID, Timestamp 637, Gravidade 4
+Exam id 143, Machine id 2, Patient id 143, Condition saude normal, Timestamp 646, Gravidade 1
+Exam id 144, Machine id 1, Patient id 144, Condition bronquite, Timestamp 657, Gravidade 2
+Exam id 145, Machine id 2, Patient id 145, Condition COVID, Timestamp 662, Gravidade 4
+Exam id 146, Machine id 1, Patient id 146, Condition Fibrose pulmonar, Timestamp 668, Gravidade 5
+Exam id 147, Machine id 3, Patient id 147, Condition saude normal, Timestamp 670, Gravidade 1
+Exam id 148, Machine id 4, Patient id 148, Condition COVID, Timestamp 672, Gravidade 4
+Exam id 149, Machine id 2, Patient id 149, Condition saude normal, Timestamp 675, Gravidade 1
+Exam id 150, Machine id 1, Patient id 150, Condition bronquite, Timestamp 680, Gravidade 2
+Exam id 151, Machine id 2, Patient id 151, Condition Cancer de pulmao, Timestamp 686, Gravidade 6
+Exam id 152, Machine id 3, Patient id 152, Condition saude normal, Timestamp 690, Gravidade 1
+Exam id 153, Machine id 1, Patient id 153, Condition saude normal, Timestamp 693, Gravidade 1
+Exam id 154, Machine id 1, Patient id 154, Condition Embolia pulmonar, Timestamp 704, Gravidade 4
+Exam id 155, Machine id 2, Patient id 155, Condition saude normal, Timestamp 711, Gravidade 1
+Exam id 156, Machine id 1, Patient id 156, Condition Tuberculose, Timestamp 715, Gravidade 5
+Exam id 157, Machine id 3, Patient id 157, Condition saude normal, Timestamp 721, Gravidade 1
+Exam id 158, Machine id 2, Patient id 158, Condition bronquite, Timestamp 723, Gravidade 2
+Exam id 159, Machine id 4, Patient id 159, Condition COVID, Timestamp 725, Gravidade 4
+Exam id 160, Machine id 1, Patient id 160, Condition COVID, Timestamp 731, Gravidade 4
+Exam id 161, Machine id 3, Patient id 161, Condition bronquite, Timestamp 733, Gravidade 2
+Exam id 162, Machine id 2, Patient id 162, Condition COVID, Timestamp 738, Gravidade 4
+Exam id 163, Machine id 4, Patient id 163, Condition bronquite, Timestamp 739, Gravidade 2
+Exam id 164, Machine id 5, Patient id 164, Condition Tuberculose, Timestamp 741, Gravidade 5
+Exam id 165, Machine id 1, Patient id 165, Condition saude normal, Timestamp 746, Gravidade 1
+Exam id 166, Machine id 3, Patient id 166, Condition bronquite, Timestamp 748, Gravidade 2
+Exam id 167, Machine id 2, Patient id 167, Condition pneumonia, Timestamp 750, Gravidade 3
+Exam id 168, Machine id 4, Patient id 168, Condition pneumonia, Timestamp 752, Gravidade 3
+Exam id 169, Machine id 5, Patient id 169, Condition saude normal, Timestamp 754, Gravidade 1
+Exam id 170, Machine id 1, Patient id 170, Condition pneumonia, Timestamp 767, Gravidade 3
+Exam id 171, Machine id 2, Patient id 171, Condition Cancer de pulmao, Timestamp 770, Gravidade 6
+Exam id 172, Machine id 3, Patient id 172, Condition saude normal, Timestamp 772, Gravidade 1
+Exam id 173, Machine id 4, Patient id 173, Condition Derrame pleural, Timestamp 774, Gravidade 4
+Exam id 174, Machine id 1, Patient id 174, Condition Cancer de pulmao, Timestamp 784, Gravidade 6
+Exam id 175, Machine id 2, Patient id 175, Condition Fibrose pulmonar, Timestamp 788, Gravidade 5
+Exam id 176, Machine id 3, Patient id 176, Condition bronquite, Timestamp 790, Gravidade 2
+Exam id 177, Machine id 4, Patient id 177, Condition saude normal, Timestamp 793, Gravidade 1
+Exam id 178, Machine id 1, Patient id 178, Condition Cancer de pulmao, Timestamp 800, Gravidade 6
+Exam id 179, Machine id 2, Patient id 179, Condition saude normal, Timestamp 802, Gravidade 1
+Exam id 180, Machine id 3, Patient id 180, Condition COVID, Timestamp 810, Gravidade 4
+Exam id 181, Machine id 1, Patient id 181, Condition bronquite, Timestamp 820, Gravidade 2
+Exam id 182, Machine id 2, Patient id 182, Condition bronquite, Timestamp 824, Gravidade 2
+Exam id 183, Machine id 3, Patient id 183, Condition saude normal, Timestamp 826, Gravidade 1
+Exam id 184, Machine id 4, Patient id 184, Condition bronquite, Timestamp 827, Gravidade 2
+Exam id 185, Machine id 1, Patient id 185, Condition pneumonia, Timestamp 832, Gravidade 3
+Exam id 186, Machine id 2, Patient id 186, Condition bronquite, Timestamp 838, Gravidade 2
+Exam id 187, Machine id 3, Patient id 187, Condition Fibrose pulmonar, Timestamp 839, Gravidade 5
+Exam id 188, Machine id 1, Patient id 188, Condition Embolia pulmonar, Timestamp 858, Gravidade 4
+Exam id 189, Machine id 2, Patient id 189, Condition bronquite, Timestamp 859, Gravidade 2
+Exam id 190, Machine id 3, Patient id 190, Condition bronquite, Timestamp 863, Gravidade 2
+Exam id 191, Machine id 4, Patient id 191, Condition bronquite, Timestamp 864, Gravidade 2
+Exam id 192, Machine id 5, Patient id 192, Condition saude normal, Timestamp 866, Gravidade 1
+Exam id 193, Machine id 1, Patient id 193, Condition pneumonia, Timestamp 870, Gravidade 3
+Exam id 194, Machine id 2, Patient id 194, Condition saude normal, Timestamp 872, Gravidade 1
+Exam id 195, Machine id 1, Patient id 195, Condition Tuberculose, Timestamp 884, Gravidade 5
+Exam id 196, Machine id 2, Patient id 196, Condition bronquite, Timestamp 885, Gravidade 2
+Exam id 197, Machine id 3, Patient id 197, Condition Fibrose pulmonar, Timestamp 887, Gravidade 5
+Exam id 198, Machine id 4, Patient id 198, Condition Cancer de pulmao, Timestamp 893, Gravidade 6
+Exam id 199, Machine id 5, Patient id 199, Condition Embolia pulmonar, Timestamp 894, Gravidade 4
+Exam id 200, Machine id 1, Patient id 200, Condition Cancer de pulmao, Timestamp 897, Gravidade 6
+Exam id 201, Machine id 2, Patient id 201, Condition bronquite, Timestamp 898, Gravidade 2
+Exam id 202, Machine id 3, Patient id 202, Condition Derrame pleural, Timestamp 901, Gravidade 4
+Exam id 203, Machine id 4, Patient id 203, Condition bronquite, Timestamp 904, Gravidade 2
+Exam id 204, Machine id 1, Patient id 204, Condition saude normal, Timestamp 911, Gravidade 1
+Exam id 205, Machine id 2, Patient id 205, Condition saude normal, Timestamp 914, Gravidade 1
+Exam id 206, Machine id 3, Patient id 206, Condition saude normal, Timestamp 917, Gravidade 1
+Exam id 207, Machine id 1, Patient id 207, Condition Tuberculose, Timestamp 922, Gravidade 5
+Exam id 208, Machine id 2, Patient id 208, Condition COVID, Timestamp 926, Gravidade 4
+Exam id 209, Machine id 4, Patient id 209, Condition saude normal, Timestamp 927, Gravidade 1
+Exam id 210, Machine id 3, Patient id 210, Condition bronquite, Timestamp 931, Gravidade 2
+Exam id 211, Machine id 1, Patient id 211, Condition Tuberculose, Timestamp 935, Gravidade 5
+Exam id 212, Machine id 5, Patient id 212, Condition COVID, Timestamp 936, Gravidade 4
+Exam id 213, Machine id 2, Patient id 213, Condition saude normal, Timestamp 940, Gravidade 1
+Exam id 214, Machine id 1, Patient id 214, Condition Tuberculose, Timestamp 949, Gravidade 5
+Exam id 215, Machine id 3, Patient id 215, Condition bronquite, Timestamp 950, Gravidade 2
+Exam id 216, Machine id 2, Patient id 216, Condition COVID, Timestamp 954, Gravidade 4
+Exam id 217, Machine id 1, Patient id 217, Condition Cancer de pulmao, Timestamp 965, Gravidade 6
+Exam id 218, Machine id 2, Patient id 218, Condition saude normal, Timestamp 966, Gravidade 1
+Exam id 219, Machine id 3, Patient id 219, Condition saude normal, Timestamp 973, Gravidade 1
+Exam id 220, Machine id 4, Patient id 220, Condition Tuberculose, Timestamp 974, Gravidade 5
+Exam id 221, Machine id 5, Patient id 221, Condition bronquite, Timestamp 975, Gravidade 2
+Exam id 222, Machine id 1, Patient id 222, Condition saude normal, Timestamp 982, Gravidade 1
+Exam id 223, Machine id 2, Patient id 223, Condition saude normal, Timestamp 986, Gravidade 1
+Exam id 224, Machine id 3, Patient id 224, Condition Cancer de pulmao, Timestamp 989, Gravidade 6
+Exam id 225, Machine id 4, Patient id 225, Condition COVID, Timestamp 992, Gravidade 4
+Exam id 226, Machine id 1, Patient id 226, Condition Cancer de pulmao, Timestamp 999, Gravidade 6
+Exam id 1, Machine id 1, Patient id 1, Condition bronquite, Timestamp 11, Gravidade 2
+Exam id 2, Machine id 2, Patient id 2, Condition COVID, Timestamp 13, Gravidade 4
+Exam id 3, Machine id 3, Patient id 3, Condition Fibrose pulmonar, Timestamp 14, Gravidade 5
+Exam id 4, Machine id 4, Patient id 4, Condition COVID, Timestamp 17, Gravidade 4
+Exam id 5, Machine id 1, Patient id 5, Condition saude normal, Timestamp 35, Gravidade 1
+Exam id 6, Machine id 2, Patient id 6, Condition Fibrose pulmonar, Timestamp 41, Gravidade 5
+Exam id 7, Machine id 1, Patient id 7, Condition saude normal, Timestamp 46, Gravidade 1
+Exam id 8, Machine id 3, Patient id 8, Condition COVID, Timestamp 50, Gravidade 4
+Exam id 9, Machine id 1, Patient id 9, Condition Cancer de pulmao, Timestamp 59, Gravidade 6
+Exam id 10, Machine id 2, Patient id 10, Condition saude normal, Timestamp 65, Gravidade 1
+Exam id 11, Machine id 3, Patient id 11, Condition Derrame pleural, Timestamp 67, Gravidade 4
+Exam id 12, Machine id 1, Patient id 12, Condition saude normal, Timestamp 76, Gravidade 1
+Exam id 13, Machine id 2, Patient id 13, Condition saude normal, Timestamp 77, Gravidade 1
+Exam id 14, Machine id 3, Patient id 14, Condition saude normal, Timestamp 80, Gravidade 1
+Exam id 15, Machine id 4, Patient id 15, Condition pneumonia, Timestamp 81, Gravidade 3
+Exam id 16, Machine id 5, Patient id 16, Condition saude normal, Timestamp 83, Gravidade 1
+Exam id 17, Machine id 1, Patient id 17, Condition saude normal, Timestamp 87, Gravidade 1
+Exam id 18, Machine id 2, Patient id 18, Condition saude normal, Timestamp 88, Gravidade 1
+Exam id 19, Machine id 3, Patient id 19, Condition bronquite, Timestamp 92, Gravidade 2
+Exam id 20, Machine id 4, Patient id 20, Condition bronquite, Timestamp 94, Gravidade 2
+Exam id 21, Machine id 1, Patient id 21, Condition saude normal, Timestamp 104, Gravidade 1
+Exam id 22, Machine id 2, Patient id 22, Condition bronquite, Timestamp 109, Gravidade 2
+Exam id 23, Machine id 3, Patient id 23, Condition saude normal, Timestamp 113, Gravidade 1
+Exam id 24, Machine id 1, Patient id 24, Condition Cancer de pulmao, Timestamp 116, Gravidade 6
+Exam id 25, Machine id 4, Patient id 25, Condition bronquite, Timestamp 117, Gravidade 2
+Exam id 26, Machine id 1, Patient id 26, Condition saude normal, Timestamp 129, Gravidade 1
+Exam id 27, Machine id 1, Patient id 27, Condition bronquite, Timestamp 144, Gravidade 2
+Exam id 28, Machine id 2, Patient id 28, Condition saude normal, Timestamp 146, Gravidade 1
+Exam id 29, Machine id 3, Patient id 29, Condition saude normal, Timestamp 148, Gravidade 1
+Exam id 30, Machine id 4, Patient id 30, Condition saude normal, Timestamp 152, Gravidade 1
+Exam id 31, Machine id 5, Patient id 31, Condition saude normal, Timestamp 154, Gravidade 1
+Exam id 32, Machine id 1, Patient id 32, Condition bronquite, Timestamp 156, Gravidade 2
+Exam id 33, Machine id 2, Patient id 33, Condition bronquite, Timestamp 160, Gravidade 2
+Exam id 34, Machine id 1, Patient id 34, Condition bronquite, Timestamp 176, Gravidade 2
+Exam id 35, Machine id 2, Patient id 35, Condition COVID, Timestamp 183, Gravidade 4
+Exam id 36, Machine id 1, Patient id 36, Condition bronquite, Timestamp 187, Gravidade 2
+Exam id 37, Machine id 3, Patient id 37, Condition Derrame pleural, Timestamp 188, Gravidade 4
+Exam id 38, Machine id 4, Patient id 38, Condition Tuberculose, Timestamp 189, Gravidade 5
+Exam id 39, Machine id 5, Patient id 39, Condition bronquite, Timestamp 190, Gravidade 2
+Exam id 40, Machine id 2, Patient id 40, Condition saude normal, Timestamp 194, Gravidade 1
+Exam id 41, Machine id 1, Patient id 41, Condition saude normal, Timestamp 198, Gravidade 1
+Exam id 42, Machine id 3, Patient id 42, Condition saude normal, Timestamp 199, Gravidade 1
+Exam id 43, Machine id 2, Patient id 43, Condition saude normal, Timestamp 206, Gravidade 1
+Exam id 44, Machine id 1, Patient id 44, Condition COVID, Timestamp 210, Gravidade 4
+Exam id 45, Machine id 2, Patient id 45, Condition Cancer de pulmao, Timestamp 218, Gravidade 6
+Exam id 46, Machine id 1, Patient id 46, Condition saude normal, Timestamp 221, Gravidade 1
+Exam id 47, Machine id 3, Patient id 47, Condition bronquite, Timestamp 222, Gravidade 2
+Exam id 48, Machine id 4, Patient id 48, Condition Derrame pleural, Timestamp 226, Gravidade 4
+Exam id 49, Machine id 2, Patient id 49, Condition Derrame pleural, Timestamp 230, Gravidade 4
+Exam id 50, Machine id 5, Patient id 50, Condition saude normal, Timestamp 231, Gravidade 1
+Exam id 51, Machine id 1, Patient id 51, Condition COVID, Timestamp 234, Gravidade 4
+Exam id 52, Machine id 2, Patient id 52, Condition Fibrose pulmonar, Timestamp 241, Gravidade 5
+Exam id 53, Machine id 1, Patient id 53, Condition COVID, Timestamp 256, Gravidade 4
+Exam id 54, Machine id 2, Patient id 54, Condition bronquite, Timestamp 258, Gravidade 2
+Exam id 55, Machine id 3, Patient id 55, Condition saude normal, Timestamp 265, Gravidade 1
+Exam id 56, Machine id 1, Patient id 56, Condition COVID, Timestamp 269, Gravidade 4
+Exam id 57, Machine id 2, Patient id 57, Condition saude normal, Timestamp 270, Gravidade 1
+Exam id 58, Machine id 4, Patient id 58, Condition bronquite, Timestamp 272, Gravidade 2
+Exam id 59, Machine id 5, Patient id 59, Condition saude normal, Timestamp 273, Gravidade 1
+Exam id 60, Machine id 3, Patient id 60, Condition saude normal, Timestamp 276, Gravidade 1
+Exam id 61, Machine id 1, Patient id 61, Condition bronquite, Timestamp 284, Gravidade 2
+Exam id 62, Machine id 2, Patient id 62, Condition bronquite, Timestamp 290, Gravidade 2
+Exam id 63, Machine id 1, Patient id 63, Condition Tuberculose, Timestamp 295, Gravidade 5
+Exam id 64, Machine id 3, Patient id 64, Condition Cancer de pulmao, Timestamp 300, Gravidade 6
+Exam id 65, Machine id 1, Patient id 65, Condition saude normal, Timestamp 307, Gravidade 1
+Exam id 66, Machine id 2, Patient id 66, Condition Cancer de pulmao, Timestamp 311, Gravidade 6
+Exam id 67, Machine id 1, Patient id 67, Condition saude normal, Timestamp 320, Gravidade 1
+Exam id 68, Machine id 2, Patient id 68, Condition bronquite, Timestamp 325, Gravidade 2
+Exam id 69, Machine id 1, Patient id 69, Condition Tuberculose, Timestamp 331, Gravidade 5
+Exam id 70, Machine id 3, Patient id 70, Condition saude normal, Timestamp 333, Gravidade 1
+Exam id 71, Machine id 2, Patient id 71, Condition Tuberculose, Timestamp 336, Gravidade 5
+Exam id 72, Machine id 4, Patient id 72, Condition bronquite, Timestamp 338, Gravidade 2
+Exam id 73, Machine id 1, Patient id 73, Condition saude normal, Timestamp 344, Gravidade 1
+Exam id 74, Machine id 2, Patient id 74, Condition bronquite, Timestamp 351, Gravidade 2
+Exam id 75, Machine id 3, Patient id 75, Condition Tuberculose, Timestamp 354, Gravidade 5
+Exam id 76, Machine id 1, Patient id 76, Condition bronquite, Timestamp 362, Gravidade 2
+Exam id 77, Machine id 2, Patient id 77, Condition Fibrose pulmonar, Timestamp 365, Gravidade 5
+Exam id 78, Machine id 1, Patient id 78, Condition Cancer de pulmao, Timestamp 374, Gravidade 6
+Exam id 79, Machine id 2, Patient id 79, Condition saude normal, Timestamp 376, Gravidade 1
+Exam id 80, Machine id 3, Patient id 80, Condition Embolia pulmonar, Timestamp 377, Gravidade 4
+Exam id 81, Machine id 4, Patient id 81, Condition bronquite, Timestamp 381, Gravidade 2
+Exam id 82, Machine id 5, Patient id 82, Condition saude normal, Timestamp 384, Gravidade 1
+Exam id 83, Machine id 1, Patient id 83, Condition Cancer de pulmao, Timestamp 388, Gravidade 6
+Exam id 84, Machine id 2, Patient id 84, Condition Derrame pleural, Timestamp 394, Gravidade 4
+Exam id 85, Machine id 1, Patient id 85, Condition pneumonia, Timestamp 401, Gravidade 3
+Exam id 86, Machine id 2, Patient id 86, Condition bronquite, Timestamp 406, Gravidade 2
+Exam id 87, Machine id 3, Patient id 87, Condition saude normal, Timestamp 408, Gravidade 1
+Exam id 88, Machine id 4, Patient id 88, Condition Tuberculose, Timestamp 411, Gravidade 5
+Exam id 89, Machine id 1, Patient id 89, Condition saude normal, Timestamp 420, Gravidade 1
+Exam id 90, Machine id 2, Patient id 90, Condition Tuberculose, Timestamp 423, Gravidade 5
+Exam id 91, Machine id 3, Patient id 91, Condition saude normal, Timestamp 424, Gravidade 1
+Exam id 92, Machine id 4, Patient id 92, Condition bronquite, Timestamp 427, Gravidade 2
+Exam id 93, Machine id 5, Patient id 93, Condition Embolia pulmonar, Timestamp 428, Gravidade 4
+Exam id 94, Machine id 1, Patient id 94, Condition bronquite, Timestamp 432, Gravidade 2
+Exam id 95, Machine id 2, Patient id 95, Condition Embolia pulmonar, Timestamp 436, Gravidade 4
+Exam id 96, Machine id 3, Patient id 96, Condition Tuberculose, Timestamp 438, Gravidade 5
+Exam id 97, Machine id 4, Patient id 97, Condition pneumonia, Timestamp 441, Gravidade 3
+Exam id 98, Machine id 1, Patient id 98, Condition bronquite, Timestamp 445, Gravidade 2
+Exam id 99, Machine id 2, Patient id 99, Condition Derrame pleural, Timestamp 449, Gravidade 4
+Exam id 100, Machine id 3, Patient id 100, Condition saude normal, Timestamp 454, Gravidade 1
+Exam id 101, Machine id 1, Patient id 101, Condition bronquite, Timestamp 460, Gravidade 2
+Exam id 102, Machine id 2, Patient id 102, Condition saude normal, Timestamp 468, Gravidade 1
+Exam id 103, Machine id 3, Patient id 103, Condition bronquite, Timestamp 470, Gravidade 2
+Exam id 104, Machine id 1, Patient id 104, Condition saude normal, Timestamp 472, Gravidade 1
+Exam id 105, Machine id 2, Patient id 105, Condition Embolia pulmonar, Timestamp 482, Gravidade 4
+Exam id 106, Machine id 1, Patient id 106, Condition saude normal, Timestamp 485, Gravidade 1
+Exam id 107, Machine id 3, Patient id 107, Condition COVID, Timestamp 490, Gravidade 4
+Exam id 108, Machine id 1, Patient id 108, Condition bronquite, Timestamp 510, Gravidade 2
+Exam id 109, Machine id 2, Patient id 109, Condition pneumonia, Timestamp 513, Gravidade 3
+Exam id 110, Machine id 3, Patient id 110, Condition Tuberculose, Timestamp 514, Gravidade 5
+Exam id 111, Machine id 4, Patient id 111, Condition bronquite, Timestamp 516, Gravidade 2
+Exam id 112, Machine id 1, Patient id 112, Condition pneumonia, Timestamp 524, Gravidade 3
+Exam id 113, Machine id 2, Patient id 113, Condition Fibrose pulmonar, Timestamp 528, Gravidade 5
+Exam id 114, Machine id 3, Patient id 114, Condition saude normal, Timestamp 530, Gravidade 1
+Exam id 115, Machine id 4, Patient id 115, Condition bronquite, Timestamp 531, Gravidade 2
+Exam id 116, Machine id 1, Patient id 116, Condition Cancer de pulmao, Timestamp 535, Gravidade 6
+Exam id 117, Machine id 2, Patient id 117, Condition Tuberculose, Timestamp 539, Gravidade 5
+Exam id 118, Machine id 5, Patient id 118, Condition Fibrose pulmonar, Timestamp 540, Gravidade 5
+Exam id 119, Machine id 3, Patient id 119, Condition COVID, Timestamp 541, Gravidade 4
+Exam id 120, Machine id 4, Patient id 120, Condition Fibrose pulmonar, Timestamp 543, Gravidade 5
+Exam id 121, Machine id 1, Patient id 121, Condition Cancer de pulmao, Timestamp 546, Gravidade 6
+Exam id 122, Machine id 2, Patient id 122, Condition bronquite, Timestamp 550, Gravidade 2
+Exam id 123, Machine id 3, Patient id 123, Condition saude normal, Timestamp 555, Gravidade 1
+Exam id 124, Machine id 1, Patient id 124, Condition Tuberculose, Timestamp 557, Gravidade 5
+Exam id 125, Machine id 4, Patient id 125, Condition bronquite, Timestamp 560, Gravidade 2
+Exam id 126, Machine id 2, Patient id 126, Condition saude normal, Timestamp 562, Gravidade 1
+Exam id 127, Machine id 3, Patient id 127, Condition pneumonia, Timestamp 566, Gravidade 3
+Exam id 128, Machine id 1, Patient id 128, Condition Cancer de pulmao, Timestamp 573, Gravidade 6
+Exam id 129, Machine id 2, Patient id 129, Condition bronquite, Timestamp 574, Gravidade 2
+Exam id 130, Machine id 3, Patient id 130, Condition COVID, Timestamp 581, Gravidade 4
+Exam id 131, Machine id 4, Patient id 131, Condition Derrame pleural, Timestamp 582, Gravidade 4
+Exam id 132, Machine id 1, Patient id 132, Condition pneumonia, Timestamp 585, Gravidade 3
+Exam id 133, Machine id 2, Patient id 133, Condition saude normal, Timestamp 592, Gravidade 1
+Exam id 134, Machine id 1, Patient id 134, Condition bronquite, Timestamp 598, Gravidade 2
+Exam id 135, Machine id 2, Patient id 135, Condition bronquite, Timestamp 604, Gravidade 2
+Exam id 136, Machine id 3, Patient id 136, Condition pneumonia, Timestamp 606, Gravidade 3
+Exam id 137, Machine id 1, Patient id 137, Condition saude normal, Timestamp 611, Gravidade 1
+Exam id 138, Machine id 2, Patient id 138, Condition saude normal, Timestamp 618, Gravidade 1
+Exam id 139, Machine id 1, Patient id 139, Condition COVID, Timestamp 624, Gravidade 4
+Exam id 140, Machine id 2, Patient id 140, Condition COVID, Timestamp 630, Gravidade 4
+Exam id 141, Machine id 3, Patient id 141, Condition Tuberculose, Timestamp 631, Gravidade 5
+Exam id 142, Machine id 1, Patient id 142, Condition COVID, Timestamp 637, Gravidade 4
+Exam id 143, Machine id 2, Patient id 143, Condition saude normal, Timestamp 646, Gravidade 1
+Exam id 144, Machine id 1, Patient id 144, Condition bronquite, Timestamp 657, Gravidade 2
+Exam id 145, Machine id 2, Patient id 145, Condition COVID, Timestamp 662, Gravidade 4
+Exam id 146, Machine id 1, Patient id 146, Condition Fibrose pulmonar, Timestamp 668, Gravidade 5
+Exam id 147, Machine id 3, Patient id 147, Condition saude normal, Timestamp 670, Gravidade 1
+Exam id 148, Machine id 4, Patient id 148, Condition COVID, Timestamp 672, Gravidade 4
+Exam id 149, Machine id 2, Patient id 149, Condition saude normal, Timestamp 675, Gravidade 1
+Exam id 150, Machine id 1, Patient id 150, Condition bronquite, Timestamp 680, Gravidade 2
+Exam id 151, Machine id 2, Patient id 151, Condition Cancer de pulmao, Timestamp 686, Gravidade 6
+Exam id 152, Machine id 3, Patient id 152, Condition saude normal, Timestamp 690, Gravidade 1
+Exam id 153, Machine id 1, Patient id 153, Condition saude normal, Timestamp 693, Gravidade 1
+Exam id 154, Machine id 1, Patient id 154, Condition Embolia pulmonar, Timestamp 704, Gravidade 4
+Exam id 155, Machine id 2, Patient id 155, Condition saude normal, Timestamp 711, Gravidade 1
+Exam id 156, Machine id 1, Patient id 156, Condition Tuberculose, Timestamp 715, Gravidade 5
+Exam id 157, Machine id 3, Patient id 157, Condition saude normal, Timestamp 721, Gravidade 1
+Exam id 158, Machine id 2, Patient id 158, Condition bronquite, Timestamp 723, Gravidade 2
+Exam id 159, Machine id 4, Patient id 159, Condition COVID, Timestamp 725, Gravidade 4
+Exam id 160, Machine id 1, Patient id 160, Condition COVID, Timestamp 731, Gravidade 4
+Exam id 161, Machine id 3, Patient id 161, Condition bronquite, Timestamp 733, Gravidade 2
+Exam id 162, Machine id 2, Patient id 162, Condition COVID, Timestamp 738, Gravidade 4
+Exam id 163, Machine id 4, Patient id 163, Condition bronquite, Timestamp 739, Gravidade 2
+Exam id 164, Machine id 5, Patient id 164, Condition Tuberculose, Timestamp 741, Gravidade 5
+Exam id 165, Machine id 1, Patient id 165, Condition saude normal, Timestamp 746, Gravidade 1
+Exam id 166, Machine id 3, Patient id 166, Condition bronquite, Timestamp 748, Gravidade 2
+Exam id 167, Machine id 2, Patient id 167, Condition pneumonia, Timestamp 750, Gravidade 3
+Exam id 168, Machine id 4, Patient id 168, Condition pneumonia, Timestamp 752, Gravidade 3
+Exam id 169, Machine id 5, Patient id 169, Condition saude normal, Timestamp 754, Gravidade 1
+Exam id 170, Machine id 1, Patient id 170, Condition pneumonia, Timestamp 767, Gravidade 3
+Exam id 171, Machine id 2, Patient id 171, Condition Cancer de pulmao, Timestamp 770, Gravidade 6
+Exam id 172, Machine id 3, Patient id 172, Condition saude normal, Timestamp 772, Gravidade 1
+Exam id 173, Machine id 4, Patient id 173, Condition Derrame pleural, Timestamp 774, Gravidade 4
+Exam id 174, Machine id 1, Patient id 174, Condition Cancer de pulmao, Timestamp 784, Gravidade 6
+Exam id 175, Machine id 2, Patient id 175, Condition Fibrose pulmonar, Timestamp 788, Gravidade 5
+Exam id 176, Machine id 3, Patient id 176, Condition bronquite, Timestamp 790, Gravidade 2
+Exam id 177, Machine id 4, Patient id 177, Condition saude normal, Timestamp 793, Gravidade 1
+Exam id 178, Machine id 1, Patient id 178, Condition Cancer de pulmao, Timestamp 800, Gravidade 6
+Exam id 179, Machine id 2, Patient id 179, Condition saude normal, Timestamp 802, Gravidade 1
+Exam id 180, Machine id 3, Patient id 180, Condition COVID, Timestamp 810, Gravidade 4
+Exam id 181, Machine id 1, Patient id 181, Condition bronquite, Timestamp 820, Gravidade 2
+Exam id 182, Machine id 2, Patient id 182, Condition bronquite, Timestamp 824, Gravidade 2
+Exam id 183, Machine id 3, Patient id 183, Condition saude normal, Timestamp 826, Gravidade 1
+Exam id 184, Machine id 4, Patient id 184, Condition bronquite, Timestamp 827, Gravidade 2
+Exam id 185, Machine id 1, Patient id 185, Condition pneumonia, Timestamp 832, Gravidade 3
+Exam id 186, Machine id 2, Patient id 186, Condition bronquite, Timestamp 838, Gravidade 2
+Exam id 187, Machine id 3, Patient id 187, Condition Fibrose pulmonar, Timestamp 839, Gravidade 5
+Exam id 188, Machine id 1, Patient id 188, Condition Embolia pulmonar, Timestamp 858, Gravidade 4
+Exam id 189, Machine id 2, Patient id 189, Condition bronquite, Timestamp 859, Gravidade 2
+Exam id 190, Machine id 3, Patient id 190, Condition bronquite, Timestamp 863, Gravidade 2
+Exam id 191, Machine id 4, Patient id 191, Condition bronquite, Timestamp 864, Gravidade 2
+Exam id 192, Machine id 5, Patient id 192, Condition saude normal, Timestamp 866, Gravidade 1
+Exam id 193, Machine id 1, Patient id 193, Condition pneumonia, Timestamp 870, Gravidade 3
+Exam id 194, Machine id 2, Patient id 194, Condition saude normal, Timestamp 872, Gravidade 1
+Exam id 195, Machine id 1, Patient id 195, Condition Tuberculose, Timestamp 884, Gravidade 5
+Exam id 196, Machine id 2, Patient id 196, Condition bronquite, Timestamp 885, Gravidade 2
+Exam id 197, Machine id 3, Patient id 197, Condition Fibrose pulmonar, Timestamp 887, Gravidade 5
+Exam id 198, Machine id 4, Patient id 198, Condition Cancer de pulmao, Timestamp 893, Gravidade 6
+Exam id 199, Machine id 5, Patient id 199, Condition Embolia pulmonar, Timestamp 894, Gravidade 4
+Exam id 200, Machine id 1, Patient id 200, Condition Cancer de pulmao, Timestamp 897, Gravidade 6
+Exam id 201, Machine id 2, Patient id 201, Condition bronquite, Timestamp 898, Gravidade 2
+Exam id 202, Machine id 3, Patient id 202, Condition Derrame pleural, Timestamp 901, Gravidade 4
+Exam id 203, Machine id 4, Patient id 203, Condition bronquite, Timestamp 904, Gravidade 2
+Exam id 204, Machine id 1, Patient id 204, Condition saude normal, Timestamp 911, Gravidade 1
+Exam id 205, Machine id 2, Patient id 205, Condition saude normal, Timestamp 914, Gravidade 1
+Exam id 206, Machine id 3, Patient id 206, Condition saude normal, Timestamp 917, Gravidade 1
+Exam id 207, Machine id 1, Patient id 207, Condition Tuberculose, Timestamp 922, Gravidade 5
+Exam id 208, Machine id 2, Patient id 208, Condition COVID, Timestamp 926, Gravidade 4
+Exam id 209, Machine id 4, Patient id 209, Condition saude normal, Timestamp 927, Gravidade 1
+Exam id 210, Machine id 3, Patient id 210, Condition bronquite, Timestamp 931, Gravidade 2
+Exam id 211, Machine id 1, Patient id 211, Condition Tuberculose, Timestamp 935, Gravidade 5
+Exam id 212, Machine id 5, Patient id 212, Condition COVID, Timestamp 936, Gravidade 4
+Exam id 213, Machine id 2, Patient id 213, Condition saude normal, Timestamp 940, Gravidade 1
+Exam id 214, Machine id 1, Patient id 214, Condition Tuberculose, Timestamp 949, Gravidade 5
+Exam id 215, Machine id 3, Patient id 215, Condition bronquite, Timestamp 950, Gravidade 2
+Exam id 216, Machine id 2, Patient id 216, Condition COVID, Timestamp 954, Gravidade 4
+Exam id 217, Machine id 1, Patient id 217, Condition Cancer de pulmao, Timestamp 965, Gravidade 6
+Exam id 218, Machine id 2, Patient id 218, Condition saude normal, Timestamp 966, Gravidade 1
+Exam id 219, Machine id 3, Patient id 219, Condition saude normal, Timestamp 973, Gravidade 1
+Exam id 220, Machine id 4, Patient id 220, Condition Tuberculose, Timestamp 974, Gravidade 5
+Exam id 221, Machine id 5, Patient id 221, Condition bronquite, Timestamp 975, Gravidade 2
+Exam id 222, Machine id 1, Patient id 222, Condition saude normal, Timestamp 982, Gravidade 1
+Exam id 223, Machine id 2, Patient id 223, Condition saude normal, Timestamp 986, Gravidade 1
+Exam id 224, Machine id 3, Patient id 224, Condition Cancer de pulmao, Timestamp 989, Gravidade 6
+Exam id 225, Machine id 4, Patient id 225, Condition COVID, Timestamp 992, Gravidade 4
+Exam id 226, Machine id 1, Patient id 226, Condition Cancer de pulmao, Timestamp 999, Gravidade 6
+Exam id 1, Machine id 1, Patient id 1, Condition bronquite, Timestamp 11, Gravidade 2
+Exam id 2, Machine id 2, Patient id 2, Condition COVID, Timestamp 13, Gravidade 4
+Exam id 3, Machine id 3, Patient id 3, Condition Fibrose pulmonar, Timestamp 14, Gravidade 5
+Exam id 4, Machine id 4, Patient id 4, Condition COVID, Timestamp 17, Gravidade 4
+Exam id 5, Machine id 1, Patient id 5, Condition saude normal, Timestamp 35, Gravidade 1
+Exam id 6, Machine id 2, Patient id 6, Condition Fibrose pulmonar, Timestamp 41, Gravidade 5
+Exam id 7, Machine id 1, Patient id 7, Condition saude normal, Timestamp 46, Gravidade 1
+Exam id 8, Machine id 3, Patient id 8, Condition COVID, Timestamp 50, Gravidade 4
+Exam id 9, Machine id 1, Patient id 9, Condition Cancer de pulmao, Timestamp 59, Gravidade 6
+Exam id 10, Machine id 2, Patient id 10, Condition saude normal, Timestamp 65, Gravidade 1
+Exam id 11, Machine id 3, Patient id 11, Condition Derrame pleural, Timestamp 67, Gravidade 4
+Exam id 12, Machine id 1, Patient id 12, Condition saude normal, Timestamp 76, Gravidade 1
+Exam id 13, Machine id 2, Patient id 13, Condition saude normal, Timestamp 77, Gravidade 1
+Exam id 14, Machine id 3, Patient id 14, Condition saude normal, Timestamp 80, Gravidade 1
+Exam id 15, Machine id 4, Patient id 15, Condition pneumonia, Timestamp 81, Gravidade 3
+Exam id 16, Machine id 5, Patient id 16, Condition saude normal, Timestamp 83, Gravidade 1
+Exam id 17, Machine id 1, Patient id 17, Condition saude normal, Timestamp 87, Gravidade 1
+Exam id 18, Machine id 2, Patient id 18, Condition saude normal, Timestamp 88, Gravidade 1
+Exam id 19, Machine id 3, Patient id 19, Condition bronquite, Timestamp 92, Gravidade 2
+Exam id 20, Machine id 4, Patient id 20, Condition bronquite, Timestamp 94, Gravidade 2
+Exam id 1, Machine id 1, Patient id 1, Condition bronquite, Timestamp 11, Gravidade 2
+Exam id 2, Machine id 2, Patient id 2, Condition COVID, Timestamp 13, Gravidade 4
+Exam id 3, Machine id 3, Patient id 3, Condition Fibrose pulmonar, Timestamp 14, Gravidade 5
+Exam id 4, Machine id 4, Patient id 4, Condition COVID, Timestamp 17, Gravidade 4
+Exam id 5, Machine id 1, Patient id 5, Condition saude normal, Timestamp 35, Gravidade 1
+Exam id 6, Machine id 2, Patient id 6, Condition Fibrose pulmonar, Timestamp 41, Gravidade 5
+Exam id 7, Machine id 1, Patient id 7, Condition saude normal, Timestamp 46, Gravidade 1
+Exam id 8, Machine id 3, Patient id 8, Condition COVID, Timestamp 50, Gravidade 4
+Exam id 9, Machine id 1, Patient id 9, Condition Cancer de pulmao, Timestamp 59, Gravidade 6
+Exam id 10, Machine id 2, Patient id 10, Condition saude normal, Timestamp 65, Gravidade 1
+Exam id 11, Machine id 3, Patient id 11, Condition Derrame pleural, Timestamp 67, Gravidade 4
+Exam id 12, Machine id 1, Patient id 12, Condition saude normal, Timestamp 76, Gravidade 1
+Exam id 13, Machine id 2, Patient id 13, Condition saude normal, Timestamp 77, Gravidade 1
+Exam id 14, Machine id 3, Patient id 14, Condition saude normal, Timestamp 80, Gravidade 1
+Exam id 15, Machine id 4, Patient id 15, Condition pneumonia, Timestamp 81, Gravidade 3
+Exam id 16, Machine id 5, Patient id 16, Condition saude normal, Timestamp 83, Gravidade 1
+Exam id 17, Machine id 1, Patient id 17, Condition saude normal, Timestamp 87, Gravidade 1
+Exam id 18, Machine id 2, Patient id 18, Condition saude normal, Timestamp 88, Gravidade 1
+Exam id 19, Machine id 3, Patient id 19, Condition bronquite, Timestamp 92, Gravidade 2
+Exam id 20, Machine id 4, Patient id 20, Condition bronquite, Timestamp 94, Gravidade 2
+Exam id 1, Machine id 1, Patient id 1, Condition bronquite, Timestamp 11, Gravidade 2
+Exam id 2, Machine id 2, Patient id 2, Condition COVID, Timestamp 13, Gravidade 4
+Exam id 3, Machine id 3, Patient id 3, Condition Fibrose pulmonar, Timestamp 14, Gravidade 5
+Exam id 4, Machine id 4, Patient id 4, Condition COVID, Timestamp 17, Gravidade 4
+Exam id 5, Machine id 1, Patient id 5, Condition saude normal, Timestamp 35, Gravidade 1
+Exam id 6, Machine id 2, Patient id 6, Condition Fibrose pulmonar, Timestamp 41, Gravidade 5
+Exam id 7, Machine id 1, Patient id 7, Condition saude normal, Timestamp 46, Gravidade 1
+Exam id 8, Machine id 3, Patient id 8, Condition COVID, Timestamp 50, Gravidade 4
+Exam id 9, Machine id 1, Patient id 9, Condition Cancer de pulmao, Timestamp 59, Gravidade 6
+Exam id 10, Machine id 2, Patient id 10, Condition saude normal, Timestamp 65, Gravidade 1
+Exam id 11, Machine id 3, Patient id 11, Condition Derrame pleural, Timestamp 67, Gravidade 4
+Exam id 12, Machine id 1, Patient id 12, Condition saude normal, Timestamp 76, Gravidade 1
+Exam id 13, Machine id 2, Patient id 13, Condition saude normal, Timestamp 77, Gravidade 1
+Exam id 14, Machine id 3, Patient id 14, Condition saude normal, Timestamp 80, Gravidade 1
+Exam id 15, Machine id 4, Patient id 15, Condition pneumonia, Timestamp 81, Gravidade 3
+Exam id 16, Machine id 5, Patient id 16, Condition saude normal, Timestamp 83, Gravidade 1
+Exam id 17, Machine id 1, Patient id 17, Condition saude normal, Timestamp 87, Gravidade 1
+Exam id 18, Machine id 2, Patient id 18, Condition saude normal, Timestamp 88, Gravidade 1
+Exam id 19, Machine id 3, Patient id 19, Condition bronquite, Timestamp 92, Gravidade 2
+Exam id 20, Machine id 4, Patient id 20, Condition bronquite, Timestamp 94, Gravidade 2
+Exam id 1, Machine id 1, Patient id 1, Condition bronquite, Timestamp 11, Gravidade 2
+Exam id 2, Machine id 2, Patient id 2, Condition COVID, Timestamp 13, Gravidade 4
+Exam id 3, Machine id 3, Patient id 3, Condition Fibrose pulmonar, Timestamp 14, Gravidade 5
+Exam id 4, Machine id 4, Patient id 4, Condition COVID, Timestamp 17, Gravidade 4
+Exam id 5, Machine id 1, Patient id 5, Condition saude normal, Timestamp 35, Gravidade 1
+Exam id 6, Machine id 2, Patient id 6, Condition Fibrose pulmonar, Timestamp 41, Gravidade 5
+Exam id 7, Machine id 1, Patient id 7, Condition saude normal, Timestamp 46, Gravidade 1
+Exam id 8, Machine id 3, Patient id 8, Condition COVID, Timestamp 50, Gravidade 4
+Exam id 9, Machine id 1, Patient id 9, Condition Cancer de pulmao, Timestamp 59, Gravidade 6
+Exam id 10, Machine id 2, Patient id 10, Condition saude normal, Timestamp 65, Gravidade 1
+Exam id 11, Machine id 3, Patient id 11, Condition Derrame pleural, Timestamp 67, Gravidade 4
+Exam id 12, Machine id 1, Patient id 12, Condition saude normal, Timestamp 76, Gravidade 1
+Exam id 13, Machine id 2, Patient id 13, Condition saude normal, Timestamp 77, Gravidade 1
+Exam id 14, Machine id 3, Patient id 14, Condition saude normal, Timestamp 80, Gravidade 1
+Exam id 15, Machine id 4, Patient id 15, Condition pneumonia, Timestamp 81, Gravidade 3
+Exam id 16, Machine id 5, Patient id 16, Condition saude normal, Timestamp 83, Gravidade 1
+Exam id 17, Machine id 1, Patient id 17, Condition saude normal, Timestamp 87, Gravidade 1
+Exam id 18, Machine id 2, Patient id 18, Condition saude normal, Timestamp 88, Gravidade 1
+Exam id 19, Machine id 3, Patient id 19, Condition bronquite, Timestamp 92, Gravidade 2
+Exam id 20, Machine id 4, Patient id 20, Condition bronquite, Timestamp 94, Gravidade 2
+Exam id 1, Machine id 1, Patient id 1, Condition bronquite, Timestamp 11, Gravidade 2
+Exam id 2, Machine id 2, Patient id 2, Condition COVID, Timestamp 13, Gravidade 4
+Exam id 3, Machine id 3, Patient id 3, Condition Fibrose pulmonar, Timestamp 14, Gravidade 5
+Exam id 4, Machine id 4, Patient id 4, Condition COVID, Timestamp 17, Gravidade 4
+Exam id 5, Machine id 1, Patient id 5, Condition saude normal, Timestamp 35, Gravidade 1
+Exam id 6, Machine id 2, Patient id 6, Condition Fibrose pulmonar, Timestamp 41, Gravidade 5
+Exam id 7, Machine id 1, Patient id 7, Condition saude normal, Timestamp 46, Gravidade 1
+Exam id 8, Machine id 3, Patient id 8, Condition COVID, Timestamp 50, Gravidade 4
+Exam id 9, Machine id 1, Patient id 9, Condition Cancer de pulmao, Timestamp 59, Gravidade 6
+Exam id 10, Machine id 2, Patient id 10, Condition saude normal, Timestamp 65, Gravidade 1
+Exam id 11, Machine id 3, Patient id 11, Condition Derrame pleural, Timestamp 67, Gravidade 4
+Exam id 12, Machine id 1, Patient id 12, Condition saude normal, Timestamp 76, Gravidade 1
+Exam id 13, Machine id 2, Patient id 13, Condition saude normal, Timestamp 77, Gravidade 1
+Exam id 14, Machine id 3, Patient id 14, Condition saude normal, Timestamp 80, Gravidade 1
+Exam id 15, Machine id 4, Patient id 15, Condition pneumonia, Timestamp 81, Gravidade 3
+Exam id 16, Machine id 5, Patient id 16, Condition saude normal, Timestamp 83, Gravidade 1
+Exam id 17, Machine id 1, Patient id 17, Condition saude normal, Timestamp 87, Gravidade 1
+Exam id 18, Machine id 2, Patient id 18, Condition saude normal, Timestamp 88, Gravidade 1
+Exam id 19, Machine id 3, Patient id 19, Condition bronquite, Timestamp 92, Gravidade 2
+Exam id 20, Machine id 4, Patient id 20, Condition bronquite, Timestamp 94, Gravidade 2
+Exam id 1, Machine id 1, Patient id 1, Condition bronquite, Timestamp 11, Gravidade 2
+Exam id 2, Machine id 2, Patient id 2, Condition COVID, Timestamp 13, Gravidade 4
+Exam id 3, Machine id 3, Patient id 3, Condition Fibrose pulmonar, Timestamp 14, Gravidade 5
+Exam id 4, Machine id 4, Patient id 4, Condition COVID, Timestamp 17, Gravidade 4
+Exam id 5, Machine id 1, Patient id 5, Condition saude normal, Timestamp 35, Gravidade 1
+Exam id 6, Machine id 2, Patient id 6, Condition Fibrose pulmonar, Timestamp 41, Gravidade 5
+Exam id 7, Machine id 1, Patient id 7, Condition saude normal, Timestamp 46, Gravidade 1
+Exam id 8, Machine id 3, Patient id 8, Condition COVID, Timestamp 50, Gravidade 4
+Exam id 9, Machine id 1, Patient id 9, Condition Cancer de pulmao, Timestamp 59, Gravidade 6
+Exam id 10, Machine id 2, Patient id 10, Condition saude normal, Timestamp 65, Gravidade 1
+Exam id 11, Machine id 3, Patient id 11, Condition Derrame pleural, Timestamp 67, Gravidade 4
+Exam id 12, Machine id 1, Patient id 12, Condition saude normal, Timestamp 76, Gravidade 1
+Exam id 13, Machine id 2, Patient id 13, Condition saude normal, Timestamp 77, Gravidade 1
+Exam id 14, Machine id 3, Patient id 14, Condition saude normal, Timestamp 80, Gravidade 1
+Exam id 15, Machine id 4, Patient id 15, Condition pneumonia, Timestamp 81, Gravidade 3
+Exam id 16, Machine id 5, Patient id 16, Condition saude normal, Timestamp 83, Gravidade 1
+Exam id 17, Machine id 1, Patient id 17, Condition saude normal, Timestamp 87, Gravidade 1
+Exam id 18, Machine id 2, Patient id 18, Condition saude normal, Timestamp 88, Gravidade 1
+Exam id 19, Machine id 3, Patient id 19, Condition bronquite, Timestamp 92, Gravidade 2
+Exam id 20, Machine id 4, Patient id 20, Condition bronquite, Timestamp 94, Gravidade 2
+Exam id 1, Machine id 1, Patient id 1, Condition bronquite, Timestamp 11, Gravidade 2
+Exam id 2, Machine id 2, Patient id 2, Condition COVID, Timestamp 13, Gravidade 4
+Exam id 3, Machine id 3, Patient id 3, Condition Fibrose pulmonar, Timestamp 14, Gravidade 5
+Exam id 4, Machine id 4, Patient id 4, Condition COVID, Timestamp 17, Gravidade 4
+Exam id 5, Machine id 1, Patient id 5, Condition saude normal, Timestamp 35, Gravidade 1
+Exam id 6, Machine id 2, Patient id 6, Condition Fibrose pulmonar, Timestamp 41, Gravidade 5
+Exam id 7, Machine id 1, Patient id 7, Condition saude normal, Timestamp 46, Gravidade 1
+Exam id 8, Machine id 3, Patient id 8, Condition COVID, Timestamp 50, Gravidade 4
+Exam id 9, Machine id 1, Patient id 9, Condition Cancer de pulmao, Timestamp 59, Gravidade 6
+Exam id 10, Machine id 2, Patient id 10, Condition saude normal, Timestamp 65, Gravidade 1
+Exam id 11, Machine id 3, Patient id 11, Condition Derrame pleural, Timestamp 67, Gravidade 4
+Exam id 12, Machine id 1, Patient id 12, Condition saude normal, Timestamp 76, Gravidade 1
+Exam id 13, Machine id 2, Patient id 13, Condition saude normal, Timestamp 77, Gravidade 1
+Exam id 14, Machine id 3, Patient id 14, Condition saude normal, Timestamp 80, Gravidade 1
+Exam id 15, Machine id 4, Patient id 15, Condition pneumonia, Timestamp 81, Gravidade 3
+Exam id 16, Machine id 5, Patient id 16, Condition saude normal, Timestamp 83, Gravidade 1
+Exam id 17, Machine id 1, Patient id 17, Condition saude normal, Timestamp 87, Gravidade 1
+Exam id 18, Machine id 2, Patient id 18, Condition saude normal, Timestamp 88, Gravidade 1
+Exam id 19, Machine id 3, Patient id 19, Condition bronquite, Timestamp 92, Gravidade 2
+Exam id 20, Machine id 4, Patient id 20, Condition bronquite, Timestamp 94, Gravidade 2
+Exam id 1, Machine id 1, Patient id 1, Condition bronquite, Timestamp 11, Gravidade 2
+Exam id 2, Machine id 2, Patient id 2, Condition COVID, Timestamp 13, Gravidade 4
+Exam id 3, Machine id 3, Patient id 3, Condition Fibrose pulmonar, Timestamp 14, Gravidade 5
+Exam id 4, Machine id 4, Patient id 4, Condition COVID, Timestamp 17, Gravidade 4
+Exam id 5, Machine id 1, Patient id 5, Condition saude normal, Timestamp 35, Gravidade 1
+Exam id 6, Machine id 2, Patient id 6, Condition Fibrose pulmonar, Timestamp 41, Gravidade 5
+Exam id 7, Machine id 1, Patient id 7, Condition saude normal, Timestamp 46, Gravidade 1
+Exam id 8, Machine id 3, Patient id 8, Condition COVID, Timestamp 50, Gravidade 4
+Exam id 9, Machine id 1, Patient id 9, Condition Cancer de pulmao, Timestamp 59, Gravidade 6
+Exam id 10, Machine id 2, Patient id 10, Condition saude normal, Timestamp 65, Gravidade 1
+Exam id 11, Machine id 3, Patient id 11, Condition Derrame pleural, Timestamp 67, Gravidade 4
+Exam id 12, Machine id 1, Patient id 12, Condition saude normal, Timestamp 76, Gravidade 1
+Exam id 13, Machine id 2, Patient id 13, Condition saude normal, Timestamp 77, Gravidade 1
+Exam id 14, Machine id 3, Patient id 14, Condition saude normal, Timestamp 80, Gravidade 1
+Exam id 15, Machine id 4, Patient id 15, Condition pneumonia, Timestamp 81, Gravidade 3
+Exam id 16, Machine id 5, Patient id 16, Condition saude normal, Timestamp 83, Gravidade 1
+Exam id 17, Machine id 1, Patient id 17, Condition saude normal, Timestamp 87, Gravidade 1
+Exam id 18, Machine id 2, Patient id 18, Condition saude normal, Timestamp 88, Gravidade 1
+Exam id 19, Machine id 3, Patient id 19, Condition bronquite, Timestamp 92, Gravidade 2
+Exam id 20, Machine id 4, Patient id 20, Condition bronquite, Timestamp 94, Gravidade 2
