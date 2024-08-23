@@ -37,9 +37,6 @@ int main()
         checkExamDuration(id_exam, q_exam, machine_list, timestamp, q_patient, q_patient_outs);
 
 
-
-
-        
         
         timestamp++;
     }

@@ -27,6 +27,6 @@ Patient * removePatientFromMachine(MachineList *machine_list, int machine_id);
 
 void movePatientToQueue(MachineList *machine_list, int machine_id, QueuePatient *new_queue, Patient *patient);
 
-void checkExamDuration(int id_exam, QueueExam *queue_exam, MachineList *machine_list, int timestamp, QueuePatient *patient_queue, QueuePatient *q_patient_outs);
+int checkExamDuration(int id_exam, QueueExam *queue_exam, MachineList *machine_list, int timestamp, QueuePatient *patient_queue, QueuePatient *q_patient_outs);
 
 #endif

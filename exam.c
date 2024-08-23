@@ -98,15 +98,33 @@ Exam* createExam(int id, int machine_id, int patient_id,  int timestamp)
     return exam;
 }
 
-int exam_creation(QueueExam *queue_exam, int id, int machine_id, int patient_id,  int timestamp){
+void exam_creation( QueueExam *queue_exam, int exam_id, int machine_id, int patient_id,  int timestamp){
 
-    Exam *exam = createExam( id, machine_id, patient_id, timestamp);
-    id++;
 
-    //exam_writer();
+    Exam *exam = createExam( exam_id, machine_id, patient_id, timestamp);
+    exam_id++;
+    exam_writer(exam);
     q_exam_enqueue(queue_exam, exam);
+}
 
-    return id;
+void exam_writer(Exam *exam)
+{
+   assert(exam != NULL);
+
+   char *filename = "db_exam.txt";
+
+   // open the file for writing
+    FILE *fp = fopen(filename, "a");
+    if (fp == NULL)
+    {
+        printf("Error opening the file %s", filename);
+        return;
+    }
+    // write to the text file
+    fprintf(fp,"Exam id %d, Machine id %d, Patient id %d, Condition %s, Timestamp %d, Gravidade %d\n", exam->exam_id, exam->machine_id, exam->patient_id, exam->condition_IA, exam->timestamp, exam->gravidade);
+
+    // close the file
+    fclose(fp);
 
 }
 
