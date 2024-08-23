@@ -1,5 +1,7 @@
 {
     "files.associations": {
+        "*.embeddedhtml": "html",
+        "Makefile": "bat",
         "TESTE.C": "cpp",
         "patient.h": "c",
         "typeinfo": "c",
@@ -10,6 +12,7 @@
         "deque": "c",
         "vector": "c",
         "string_view": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "report.h": "c"
     }
 }

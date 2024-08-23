@@ -143,7 +143,7 @@ void exam_writer(Exam *exam)
 
 void exam_condition(Exam *exam)
 {
-    int chance = gen_randint(0, 100);
+    int chance = gen_randint(1, 100);
 
     if (chance <= 30) {
         strcpy(exam->condition_IA, "saude normal");

@@ -28,16 +28,16 @@ struct queue_node_patient
 
 struct machine_list
 {
-    MachineNode *first;
+   MachineNode *first;
 };
 
 struct machine_node
 {
-    int id_machine;
-    int is_occupied;
-    int machine_timestamp;
-    Patient *machine_patient;
-    MachineNode *next;
+   int id_machine;
+   int is_occupied;
+   int machine_timestamp;
+   Patient *machine_patient;
+   MachineNode *next;
 };
 
 // Function to create a new empty queue.
@@ -110,32 +110,32 @@ void pacient_writer(Patient *patient)
    char *filename = "db_patient.txt";
 
    // open the file for writing
-    FILE *fp = fopen(filename, "a");
-    if (fp == NULL)
-    {
-        printf("Error opening the file %s", filename);
-        return;
-    }
-    // write to the text file
-    fprintf(fp, "Patient ID: %d, Name: %s, Timestamp: %d\n", patient->id, patient->name, patient->timestamp);
+   FILE *fp = fopen(filename, "a");
+   if (fp == NULL)
+   {
+      printf("Error opening the file %s", filename);
+      return;
+   }
+   // write to the text file
+   fprintf(fp, "Patient ID: %d, Name: %s, Timestamp: %d\n", patient->id, patient->name, patient->timestamp);
 
-    // close the file
-    fclose(fp);
+   // close the file
+   fclose(fp);
 
 }
 
 Patient* createPatient(int id, int timestamp)
 {   
-    Patient* patient = (Patient*)malloc(sizeof(Patient));
-    assert(patient != NULL);
+   Patient* patient = (Patient*)malloc(sizeof(Patient));
+   assert(patient != NULL);
 
-    char *name_patient = gen_name();
-    patient->id = id;
-    strncpy(patient->name, name_patient, sizeof(patient->name) - 1);
-    patient->name[sizeof(patient->name) - 1] = '\0';
+   char *name_patient = gen_name();
+   patient->id = id;
+   strncpy(patient->name, name_patient, sizeof(patient->name) - 1);
+   patient->name[sizeof(patient->name) - 1] = '\0';
 
-    patient->timestamp = timestamp;
-    return patient;
+   patient->timestamp = timestamp;
+   return patient;
 }
 
 int patient_Creation(int id, int timestamp, QueuePatient *q_patient)
