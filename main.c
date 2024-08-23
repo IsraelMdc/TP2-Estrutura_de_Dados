@@ -3,6 +3,7 @@
 #include "patient.h"
 #include "machine.h"
 #include "exam.h"
+#include "report.h"
 
 
 int main()
@@ -10,6 +11,7 @@ int main()
     //
     int timestamp = 1;
     int id = 1;
+    int id_report = 1;
 
     // Initializing the machine linked list
     MachineList *machine_list = createMachineList();
@@ -44,7 +46,8 @@ int main()
         checkExamDuration(exam_priority_queue, machine_list, timestamp, q_patient, q_patient_outs);
 
         //
-        
+        id_report = create_report(exam, report_id, timestamp);
+
 
         // increase time
         timestamp++;
