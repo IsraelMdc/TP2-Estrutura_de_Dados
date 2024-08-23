@@ -15,7 +15,8 @@ int main()
 
     QueuePatient *q_patient_outs = q_patient_create();
     QueuePatient *q_patient = q_patient_create();
-    QueueExam *q_exam = q_exam_create();
+    //QueueExam *q_exam = q_exam_create();
+    ExamPriorityQueue *exam_priority_queue = createExamPriorityQueue();
 
     while (timestamp < 1000)
     {
@@ -33,7 +34,7 @@ int main()
             
         }
         
-        checkExamDuration(q_exam, machine_list, timestamp, q_patient, q_patient_outs);
+        checkExamDuration(exam_priority_queue, machine_list, timestamp, q_patient, q_patient_outs);
 
 
         
@@ -43,9 +44,11 @@ int main()
     q_print(q_patient);
     printf("\n-------LISTA DE PACIENTES QUE SAIRAM---------\n");
     q_print(q_patient_outs);
+    printf("\n-------LISTA DE EXAMES DE PRIORIDADES---------\n");
+    q_print_exam(exam_priority_queue);
     printf("\n-------LISTA DE MAQUINAS---------\n");
     printMachines(machine_list);
-    print_queue_front(q_patient);
+
 
     return 0;
 

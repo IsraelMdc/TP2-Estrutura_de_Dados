@@ -9,6 +9,7 @@ typedef struct queue_patient QueuePatient;
 typedef struct machine_list MachineList;
 typedef struct machine_node MachineNode;
 typedef struct queue_exam QueueExam;
+typedef struct exam_priority_queue ExamPriorityQueue;
 
 MachineList *createMachineList();
 
@@ -27,6 +28,6 @@ Patient * removePatientFromMachine(MachineList *machine_list, int machine_id);
 
 void movePatientToQueue(MachineList *machine_list, int machine_id, QueuePatient *new_queue, Patient *patient);
 
-void checkExamDuration(QueueExam *queue_exam, MachineList *machine_list, int timestamp, QueuePatient *patient_queue, QueuePatient *q_patient_outs);
+void checkExamDuration(ExamPriorityQueue *exam_priority_queue, MachineList *machine_list, int timestamp, QueuePatient *patient_queue, QueuePatient *q_patient_outs);
 
 #endif
