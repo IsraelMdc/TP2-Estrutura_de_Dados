@@ -9,7 +9,6 @@ int main()
 {
     int timestamp = 1;
     int id = 1;
-    int id_exam = 1;
 
     MachineList *machine_list = createMachineList();
     initializeMachinesOnList(machine_list);
@@ -34,7 +33,7 @@ int main()
             
         }
         
-        checkExamDuration(id_exam, q_exam, machine_list, timestamp, q_patient, q_patient_outs);
+        checkExamDuration(q_exam, machine_list, timestamp, q_patient, q_patient_outs);
 
 
         

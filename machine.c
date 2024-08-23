@@ -141,7 +141,7 @@ Patient *removePatientFromMachine(MachineList *machine_list, int machine_id)
     return NULL;
 }
 
-int checkExamDuration(int exam_id, QueueExam *queue_exam, MachineList *machine_list, int timestamp, QueuePatient *patient_queue, QueuePatient *q_patient_outs)
+void checkExamDuration(QueueExam *queue_exam, MachineList *machine_list, int timestamp, QueuePatient *patient_queue, QueuePatient *q_patient_outs)
 {
     MachineNode *current = machine_list->first;
     while (current != NULL)
@@ -151,7 +151,7 @@ int checkExamDuration(int exam_id, QueueExam *queue_exam, MachineList *machine_l
             printf("Exam finished for patient %s arrived %d at machine %d out at %d\n", current->machine_patient->name,current->machine_timestamp, current->id_machine, timestamp);
             Patient *removed_patient = removePatientFromMachine(machine_list, current->id_machine);
 
-            exam_creation(queue_exam, exam_id, current->id_machine, removed_patient->id, timestamp);
+            exam_creation(queue_exam, removed_patient->id, current->id_machine, removed_patient->id, timestamp);
 
             q_enqueue(q_patient_outs, removed_patient);
 
@@ -159,8 +159,6 @@ int checkExamDuration(int exam_id, QueueExam *queue_exam, MachineList *machine_l
         }
         current = current->next;
     }
-
-    return exam_id;
 };
 
 void movePatientToQueue(MachineList *machine_list, int machine_id, QueuePatient *new_queue, Patient *patient)
