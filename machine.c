@@ -166,4 +166,4 @@ void destroyMachineList(MachineList *machine_list)
         free(temp); // Free the stored node
     }
     free(machine_list); // Free the machine list itself
-}
+};
