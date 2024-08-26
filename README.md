@@ -77,11 +77,5 @@ O TAD `Report` representa um laudo e contém:
 
 ## Como Executar e Utilizar o Projeto
 
-Para compilar e executar o projeto, siga os passos abaixo:
-
-1. Crie um arquivo "main.c" fazendo uso das funções necessárias para a criação de um paciente e um exame associado ao mesmo, além de liberar a memória do programa após sua utilizaçãol, ou use o arquivo "main.c" no repositório.
-  - **Criando Paciente**: Para criar um paciente, você precisa fornecer os dados necessários, como ID, nome, data de nascimento e data de chegada, e então usar a função `create_Patient` para criar a struct do paciente.
-  - **Criando Exame**: Para criar um exame, você precisa fornecer os dados necessários, como ID do exame, ID do paciente associado, ID do aparelho de raio-x associado e a data/hora do exame, e então usar a função `create_exam` para criar a struct do exame.
-  - **Liberando Memória**: Libere a memória alocada para um paciente ou exame após sua utilização, usando as funções `destroy_patient` e `destroy_exam`, respectivamente.
-    
-2. Execute o arquivo Makefile usando o comando "make" em linux ou "mingw32-make" em windows.
+Para compilar e executar o projeto, siga o passo abaixo:
+1. Execute o arquivo Makefile usando o comando "make" em linux ou "mingw32-make" em windows.
