@@ -1,0 +1,87 @@
+# Simulação de Realização de Exames de Raio-X (parte 2)
+
+  Este trabalho prático consiste em simular o processo de realização de exames de raio-X de tórax em um hospital, com ênfase na organização da fila para laudo médico. 
+
+## Estrutura do Projeto
+
+O projeto contem os seguintes arquivos:
+
+- **patient.h**
+  - Declarações das funções para gerenciar e manipular os pacientes.
+
+- **patient.c**
+  - Implementação das funções para gerenciar e manipular os pacientes.
+
+- **exam.h**
+  - Declarações das funções para gerenciar e manipular os exames.
+
+- **exam.c**
+  - Implementação das funções para gerenciar e manipular os exames.
+ 
+- **machine.h**
+  - Declarações das funções para gerenciar e manipular as maquinas de raio-x.
+
+- **machine.c**
+  - Implementação das funções para gerenciar e manipular as maquinas de raio-x.
+ 
+- **report.h**
+  - Declarações das funções para gerenciar e manipular os laudos.
+
+- **report.c**
+  - Implementação das funções para gerenciar e manipular os laudos.
+    
+- **Makefile**
+  - Arquivo para execução do projeto.
+  
+
+## Principais TADs (Tipos Abstratos de Dados)
+
+### Existem 4 TADs principais no projeto, sendo eles:
+
+#### Patient
+O TAD `Patient` representa um paciente e contém:
+
+- `int id`: Identificador único do paciente.
+- `char* name`: Nome do paciente.
+- `timestamp`: Horário de chegada do paciente no hospital.
+  
+#### Exam
+
+O TAD `Exam` representa um exame e contém:
+
+- `int id`: Identificador único do exame.
+- `int patient_id`: Identificador do paciente associado ao exame.
+- `int machine_id`: Identificador do aparelho de raio-x associado ao exame
+- `char condition_IA`: Condição do paciente dada pela IA: 
+- `int timestamp`: Horario de começo do exame.
+- - `int gravidade`: Nivel de gravidade da condição dada pela IA.
+
+#### Machine
+O TAD `Machine` representa uma máquina de raio-x e contém:
+
+- `int id_machine`: Identificador único da máquina.
+- `int is_occupied;`: determina se a maquina está disponivel ou não.
+- `int machine_timestamp`: horário de chegada na máquina pelo paciente.
+- `Patient *machine_patient`: Ponteiro para os dados do paciente.
+
+#### Report
+O TAD `Report` representa um laudo e contém:
+
+- `int id`: Identificador único do exame.
+- `int exam_id`: Identificador do exame de base do laudo.
+- `char condition_IA`: Condição do paciente dada pela IA, depois de ser revisada pelo médico;
+- `int timestamp`: horário de término do laudo.
+
+
+
+
+## Como Executar e Utilizar o Projeto
+
+Para compilar e executar o projeto, siga os passos abaixo:
+
+1. Crie um arquivo "main.c" fazendo uso das funções necessárias para a criação de um paciente e um exame associado ao mesmo, além de liberar a memória do programa após sua utilizaçãol, ou use o arquivo "main.c" no repositório.
+  - **Criando Paciente**: Para criar um paciente, você precisa fornecer os dados necessários, como ID, nome, data de nascimento e data de chegada, e então usar a função `create_Patient` para criar a struct do paciente.
+  - **Criando Exame**: Para criar um exame, você precisa fornecer os dados necessários, como ID do exame, ID do paciente associado, ID do aparelho de raio-x associado e a data/hora do exame, e então usar a função `create_exam` para criar a struct do exame.
+  - **Liberando Memória**: Libere a memória alocada para um paciente ou exame após sua utilização, usando as funções `destroy_patient` e `destroy_exam`, respectivamente.
+    
+2. Execute o arquivo Makefile usando o comando "make" em linux ou "mingw32-make" em windows.
