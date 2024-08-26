@@ -13,6 +13,7 @@
         "vector": "c",
         "string_view": "c",
         "stdio.h": "c",
-        "report.h": "c"
+        "report.h": "c",
+        "cmath": "c"
     }
 }

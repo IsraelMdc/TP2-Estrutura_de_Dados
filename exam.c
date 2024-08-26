@@ -83,19 +83,6 @@ void enqueueExamPriorityQueue(ExamPriorityQueue *queue, Exam *exam)
     }
 }
 
-// Exam *dequeueExamPriorityQueue(ExamPriorityQueue *queue)
-// {
-//     assert(!isEmptyExamPriorityQueue(queue));
-
-//     Exam *exam = queue->front->exam; // Store the exam data from the front of the queue.
-
-//     ExamNodePriorityQueue *temp = queue->front; // Store the front node of the queue.
-//     queue->front = queue->front->next; // Update the front pointer to the next node in the queue.
-
-//     free(temp); // Free the memory allocated for the front node.
-//     return exam; // Return the exam data that was dequeued.
-// }
-
 Exam *dequeueExamPriorityQueue(ExamPriorityQueue *q)
 {
     assert(!isEmptyExamPriorityQueue(q));
@@ -126,7 +113,7 @@ int isEmptyExamPriorityQueue(ExamPriorityQueue *queue)
 void exam_creation( ExamPriorityQueue *exam_priority_queue, int exam_id, int machine_id, int patient_id,  int timestamp){
 
 
-    Exam *exam = createExam( exam_id, machine_id, patient_id, timestamp);
+    Exam *exam = createExam(exam_id, machine_id, patient_id, timestamp);
     exam_id++;
     exam_writer(exam);
     enqueueExamPriorityQueue(exam_priority_queue, exam);
@@ -146,24 +133,25 @@ int get_exam_timestamp(Exam *exam)
 {
     return exam->timestamp;
 }
+
 void exam_condition(Exam *exam)
 {
     int chance = gen_randint(1, 100);
 
     if (chance <= 30) {
-        strcpy(exam->condition_IA, "saude normal");
+        strcpy(exam->condition_IA, "Saude Normal");
         exam->gravidade = 1;
     } 
 
     else if (chance > 30 && chance <= 50) 
     {
-        strcpy(exam->condition_IA, "bronquite");
+        strcpy(exam->condition_IA, "Bronquite");
         exam->gravidade = 2;
     }
 
     else if (chance > 50 && chance <= 60) 
     {
-        strcpy(exam->condition_IA, "pneumonia");
+        strcpy(exam->condition_IA, "Pneumonia");
         exam->gravidade = 3;
     } 
 
@@ -202,6 +190,18 @@ void exam_condition(Exam *exam)
         exam->gravidade = 6;
     }
 }
+int get_exam_priority_queue_size(ExamPriorityQueue *q)
+{
+    assert(q != NULL);
+    int size = 0;
+    ExamNodePriorityQueue *current = q->front;
+    while (current != NULL)
+    {
+        size++;
+        current = current->next;
+    }
+    return size;
+}
 
 void q_print_exam(ExamPriorityQueue *q)
 {   
@@ -235,39 +235,3 @@ void exam_writer(Exam *exam)
     fclose(fp);
 
 }
-
-// void q_exam_enqueue(QueueExam *q, Exam *exam)
-// {
-//    QueueNodeExam *node = (QueueNodeExam *)malloc(sizeof(QueueNodeExam)); // Allocate memory for the new node.
-
-//    node->exam = exam; // Set the data for the new node.
-//    node->next = NULL; // Set the next pointer for the new node to NULL.
-    
-//    if (q->rear == NULL) // If the queue is empty, set both the front and rear pointers to the new node.
-//    {
-//       q->front = node;
-//       q->rear = node;
-//    }
-//    else // Otherwise, add the new node to the end of the queue and update the rear pointer.
-//    {
-//       q->rear->next = node;
-//       q->rear = node;
-//    }
-// };
-   
-//    free(temp); // Free the memory allocated for the front node.
-//    return exam; // Return the exam data that was dequeued.
-
-// }
-// QueueExam *q_exam_create()
-// {
-//     QueueExam *q = (QueueExam *)malloc(sizeof(QueueExam)); // Allocate memory for the queue structure.
-//     q->front = q->rear = NULL;                 // Initialize the front and rear pointers to NULL, indicating an empty queue.
-//     return q;
-// };
-
-// Function to check whether the queue is empty.
-// int q_is_empty_exam(QueueExam *q)
-// {
-//    return q->front == NULL;
-// }

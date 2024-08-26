@@ -23,6 +23,10 @@ char *get_exam_condition(Exam *exam);
 
 int get_exam_id(Exam *exam);
 
+int get_exam_timestamp(Exam *exam);
+
+int get_exam_priority_queue_size(ExamPriorityQueue *q);
+
 void exam_condition(Exam *exam);
 
 void q_print_exam(ExamPriorityQueue *q);

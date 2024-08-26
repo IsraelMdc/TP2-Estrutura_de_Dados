@@ -5,28 +5,11 @@
 #include "exam.h"
 #include "report.h"
 
-void hospital_log(int timestamp, int num_patients, int num_exam, int num_reports, int epq_time, int count_limit)
-{
-    printf("\n--------HOSPITAL LOG TIME: %d--------\n", timestamp);
-
-    printf("Number of patients entered: %d\n", num_patients);
-    printf("Number of patients on the exam queue: %d\n", num_patients - num_exam);
-    printf("Number of patients that finished the exam: %d\n", num_exam);
-    printf("Percentage of patients that finished the exam and got a report: %.2f%%\n", ((float)num_reports / num_exam * 100));
-    printf("Average time before getting the report: %d\n", num_reports == 0 ? 0 : epq_time / num_reports);
-    printf("Average time per condition\n");
-    //print_average_time_report();    
-    printf("Number of patients that waited more than 7200 time units: %d\n\n", count_limit);
-
-    printf("\n----------------------------\n");
-
-}
-
 int main()
 {
     // Starting the time variables
     int timestamp = 1;
-    int total_time = 200;
+    int total_time = 43200;
 
     // Starting the id variobles
     int id = 1;
@@ -34,12 +17,33 @@ int main()
 
     // Starting the doctor variables
     int doctor_occupied = 0;
-    int cooldown;
+    int doctor_wait;
 
     //starting the counts
-    float *healthy_time, *bronquite_time, *pneumonia_time, *covid_time, *embolia_time, *derrame_time, *fibrose_time, *tuberculose_time, *cancer_time = 0;
-    int *healthy_count, *bronquite_count, *pneumonia_count, *covid_count, *embolia_count, *derrame_count, *fibrose_count, *tuberculose_count, *cancer_count = 0;
+    int patient_count = 0;
+    int sum_report = 0;
 
+    // Variables to make the periodical report
+    // int count_report = 0;
+    int count_cancer = 0;
+    int count_tuberculose = 0;
+    int count_fibrose = 0;
+    int count_derrame = 0;
+    int count_embolia = 0;
+    int count_covid = 0;
+    int count_pneumonia = 0;
+    int count_bronquite = 0;
+    int count_healthy = 0;
+
+    int qtd_cancer = 0;
+    int qtd_tuberculose = 0;
+    int qtd_fibrose = 0;
+    int qtd_derrame = 0;
+    int qtd_embolia = 0;
+    int qtd_covid = 0;
+    int qtd_pneumonia = 0;
+    int qtd_bronquite = 0;
+    int qtd_healthy = 0;
 
     // Initializing the machine linked list
     MachineList *machine_list = createMachineList();
@@ -53,13 +57,9 @@ int main()
     ExamPriorityQueue *exam_priority_queue = createExamPriorityQueue();
 
     // Time loop of the simulation
-    while (timestamp < total_time)
+    while (timestamp <= total_time)
     {
-        // Printing hospital log 10 times during the simulation
-        if (timestamp % total_time/10 == 0 && timestamp != 0)
-        {
 
-        }
         id = patient_Creation(id, timestamp, q_patient); 
         
         //
@@ -69,6 +69,8 @@ int main()
             {
             Patient *patient = patient_dequeue(q_patient);
             insertPatientOnMachine(machine_list, patient, timestamp);
+
+            patient_count++;
             
             }
             
@@ -81,64 +83,109 @@ int main()
         {
             if (doctor_occupied == 0)
             {
-                                void average_time_report(Exam *exam, Report *report, 
-                float *healthy_time, float *bronquite_time, float *pneumonia_time, float *covid_time, float *embolia_time, float *derrame_time, float *fibrose_time, float *tuberculose_time, float *cancer_time,
-                int *healthy_count, int *bronquite_count, int *pneumonia_count, int *covid_count, int *embolia_count, int *derrame_count, int *fibrose_count, int *tuberculose_count, int *cancer_count)
                 Exam *exam = dequeueExamPriorityQueue(exam_priority_queue);
 
-                printf("\n--------SAINDO DA LISTA DO EXAME--------\n");
-                printf("Patient id %d, report id %d and condition %s saindo da lista\n", get_exam_id(exam), report_id, get_exam_condition(exam));
-                printf("\n----------------\n");
+                // printf("\n--------SAINDO DA LISTA DO EXAME--------\n");
+                // printf("Patient id %d, report id %d and condition %s saindo da lista\n", get_exam_id(exam), report_id, get_exam_condition(exam));
+                // printf("\n----------------\n");
 
-                Report *report = create_report(exam, report_id, timestamp);
+                sum_report += (timestamp + 30) - get_exam_timestamp(exam);
+                Report *report = create_report(exam, report_id, timestamp + 30);
                 write_report(report);
 
-                cooldown = timestamp;
+                // getting time difference for the condition calculations
+                int data_time = (timestamp + 30) - get_exam_timestamp(exam);
+
+                //
+                report_condition_data(report, data_time, &count_cancer, &qtd_cancer, &count_tuberculose, &qtd_tuberculose, 
+                &count_fibrose, &qtd_fibrose, &count_derrame, &qtd_derrame, &count_embolia, &qtd_embolia, &count_covid, 
+                &qtd_covid, &count_pneumonia, &qtd_pneumonia,&count_bronquite, &qtd_bronquite, &count_healthy, &qtd_healthy);
+
+                doctor_wait = timestamp;
                 doctor_occupied = 1;
+
+                report_destroy(report);
                 report_id++;
             } 
             else
             {
-                if(doctor_occupied == 1 && timestamp == cooldown + 30)
+                if(doctor_occupied == 1 && timestamp == doctor_wait + 30)
                 {
-                void average_time_report(Exam *exam, Report *report, 
-                float *healthy_time, float *bronquite_time, float *pneumonia_time, float *covid_time, float *embolia_time, float *derrame_time, float *fibrose_time, float *tuberculose_time, float *cancer_time,
-                int *healthy_count, int *bronquite_count, int *pneumonia_count, int *covid_count, int *embolia_count, int *derrame_count, int *fibrose_count, int *tuberculose_count, int *cancer_count)
 
                 Exam *exam = dequeueExamPriorityQueue(exam_priority_queue);
 
-                printf("\n--------SAINDO DA LISTA DO EXAME--------\n");
-                printf("Patient id %d, report id %d and condition %s saindo da lista\n", get_exam_id(exam), report_id, get_exam_condition(exam));
-                printf("\n----------------\n");
+                sum_report += (timestamp + 30) - get_exam_timestamp(exam);
 
-                Report *report = create_report(exam, report_id, timestamp);
+                // printf("\n--------SAINDO DA LISTA DO EXAME--------\n");
+                // printf("Patient id %d, report id %d and condition %s saindo da lista\n", get_exam_id(exam), report_id, get_exam_condition(exam));
+                // printf("\n----------------\n");
+
+                Report *report = create_report(exam, report_id, timestamp + 30);
                 write_report(report);
+                // getting time difference for the condition calculations
+                int data_time = (timestamp + 30) - get_exam_timestamp(exam);
+                //
+                report_condition_data(report, data_time, &count_cancer, &qtd_cancer, &count_tuberculose, &qtd_tuberculose, 
+                &count_fibrose, &qtd_fibrose, &count_derrame, &qtd_derrame, &count_embolia, &qtd_embolia, &count_covid, 
+                &qtd_covid, &count_pneumonia, &qtd_pneumonia,&count_bronquite, &qtd_bronquite, &count_healthy, &qtd_healthy);
 
-                cooldown = timestamp;
+                doctor_wait = timestamp;
                 doctor_occupied = 1;
+                report_destroy(report);
                 report_id++;
+
                 }
             }
 
         }
-         
-        //
-        //id_report = create_report(exam, report_id, timestamp);
+        int finished_exam = (patient_count - get_exam_priority_queue_size(exam_priority_queue));
+
+        if (timestamp % 100 == 0 && timestamp != 0)
+        {
+
+            printf("\n\n------------------- HOSPITAL LOG TIME: %d ----------------------------\n", timestamp);
+            
+            printf("Number of patients entered:                                     %d\n", patient_count);
+            printf("Number of patients on the exam queue:                           %d\n", get_exam_priority_queue_size(exam_priority_queue));
+            printf("Number of patients that finished the exam:                      %d\n", finished_exam);
+            printf("Percentage of patients that finished the exam and got a report: %.2f%%\n", finished_exam == 0 ? 0 : (double)(report_id * 100) / finished_exam);
+            printf("Average time before getting the report:                         %d\n", sum_report == 0 ? 0 : (sum_report/ report_id));
         
+            printf("\n------------------ AVERAGE TIME PER CONDITION ------------------------\n");
+            
+            printf("Average time for Saude normal to leave the queue:               %.2f\n", qtd_healthy == 0 ? 0 : (double)count_healthy / qtd_healthy);
+            printf("Average time for Bronquite to leave the queue:                  %.2f\n", qtd_bronquite == 0 ? 0 : (double)count_bronquite / qtd_bronquite);
+            printf("Average time for Pneumonia to leave the queue:                  %.2f\n", qtd_pneumonia == 0 ? 0 : (double)count_pneumonia / qtd_pneumonia);
+            printf("Average time for COVID to leave the queue:                      %.2f\n", qtd_covid == 0 ? 0 : (double)count_covid / qtd_covid);
+            printf("Average time for Embolia to leave the queue:                    %.2f\n", qtd_embolia == 0 ? 0 : (double)count_embolia / qtd_embolia);
+            printf("Average time for Derrame to leave the queue:                    %.2f\n", qtd_derrame == 0 ? 0 : (double)count_derrame / qtd_derrame);
+            printf("Average time for Fibrose to leave the queue:                    %.2f\n", qtd_fibrose == 0 ? 0 : (double)count_fibrose / qtd_derrame);
+            printf("Average time for Tuberculose to leave the queue:                %.2f\n", qtd_tuberculose == 0 ? 0 : (double)count_tuberculose / qtd_tuberculose);
+            printf("Average time for Cancer to leave the queue:                     %.2f\n", qtd_cancer == 0 ? 0 : (double)count_cancer / qtd_cancer);
+            printf("-----------------------------------------------------------------------\n");
+
+        }
+        if (timestamp % 7200 == 0)
+        {   printf("-----------------------------------------------------------------------\n");
+
+            printf("Num of exams after 7200:                                        %d\n", finished_exam);
+
+            printf("-----------------------------------------------------------------------\n\n");
+        }
 
         // increase time
         timestamp++;
     }
 
-    // Test prints
-    printf("\n--------LISTA DE PACIENTES--------\n");
-    q_print(q_patient);
-    printf("\n-------LISTA DE PACIENTES QUE SAIRAM---------\n");
-    q_print(q_patient_outs);
-    printf("\n-------LISTA DE EXAMES DE PRIORIDADES---------\n");
-    q_print_exam(exam_priority_queue);
-    // printf("\n-------LISTA DE MAQUINAS---------\n");
-    // printMachines(machine_list);
+    // // Test prints
+    // printf("\n--------LISTA DE PACIENTES--------\n");
+    // q_print(q_patient);
+    // printf("\n-------LISTA DE PACIENTES QUE SAIRAM---------\n");
+    // q_print(q_patient_outs);
+    // printf("\n-------LISTA DE EXAMES DE PRIORIDADES---------\n");
+    // q_print_exam(exam_priority_queue);
+    // // printf("\n-------LISTA DE MAQUINAS---------\n");
+    // // printMachines(machine_list);
 
 
     return 0;

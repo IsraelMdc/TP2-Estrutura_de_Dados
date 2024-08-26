@@ -15,6 +15,11 @@ struct report{
 
 };
 
+// struct condition_log{
+//     int condition_counter;
+//     float condition_time;
+// };
+
 // Report* start_report(int report_id, int exam_id, char condition_IA, int timestamp)
 // {
 //     Report *report = (Report*)malloc(sizeof(Report));
@@ -55,7 +60,7 @@ void condition_report(Report *report, Exam *exam)
 
     if (chance <= 30) 
     {
-        strcpy(report->condition_IA, "saude normal");
+        strcpy(report->condition_IA, "Saude Normal");
     } 
 
     else if (chance > 30 && chance <= 50) 
@@ -65,7 +70,7 @@ void condition_report(Report *report, Exam *exam)
 
     else if (chance > 50 && chance <= 60) 
     {
-        strcpy(report->condition_IA, "pneumonia");
+        strcpy(report->condition_IA, "Pneumonia");
     } 
 
     else if (chance > 60 && chance <= 70) 
@@ -101,6 +106,15 @@ void condition_report(Report *report, Exam *exam)
     }
 }
 
+char *get_report_condition(Report *report)
+{   
+    return report->condition_IA;
+}
+
+void report_destroy(Report *report){
+    free(report);
+}
+
 void write_report(Report *report)
 {
    assert(report != NULL);
@@ -123,75 +137,45 @@ void write_report(Report *report)
 
 }
 
-// int priority_queue_out(Exam *exam, int timestamp){
-//     int exam_timestamp = get_exam_timestamp(exam);
-
-//     return timestamp - exam_timestamp;
-// }
-
-void average_time_report(Exam *exam, int timestamp, 
-float *healthy_time, float *bronquite_time, float *pneumonia_time, float *covid_time, float *embolia_time, float *derrame_time, float *fibrose_time, float *tuberculose_time, float *cancer_time,
-int *healthy_count, int *bronquite_count, int *pneumonia_count, int *covid_count, int *embolia_count, int *derrame_count, int *fibrose_count, int *tuberculose_count, int *cancer_count)
+void report_condition_data(Report *report, int timestamp, int *count_cancer, int *qtd_cancer, int *count_tuberculose, int *qtd_tuberculose, 
+int *count_fibrose, int *qtd_fibrose, int *count_derrame, int *qtd_derrame, int *count_embolia, int *qtd_embolia, int *count_covid, int *qtd_covid, 
+int *count_pneumonia, int *qtd_pneumonia, int *count_bronquite, int *qtd_bronquite, int *count_healthy, int *qtd_healthy) 
 {
-    int exam_timestamp = get_exam_timestamp(exam);
-    char condition_IA[20] = get_exam_condition(exam);
 
-    if (condition_IA == "saude normal")
-    {
-        healthy_time += exam_timestamp;
-        healthy_count++;
-    }
-    else if (condition_IA == "bronquite")
-    {
-        bronquite_time += exam_timestamp;
-        bronquite_count++;
-    }
-    else if (condition_IA == "pneumonia")
-    {
-        pneumonia_time += exam_timestamp;
-        pneumonia_count++;
-    }
-    else if (condition_IA == "COVID")
-    {
-        covid_time += exam_timestamp;
-        covid_count++;
-    }
-    else if (condition_IA == "Embolia pulmonar")
-    {
-        embolia_time += exam_timestamp;
-        embolia_count++;
-    }
-    else if (condition_IA == "Derrame pleural")
-    {
-        derrame_time += exam_timestamp;
-        derrame_count++;
-    }
-    else if (condition_IA == "Fibrose pulmonar")
-    {
-        fibrose_time += exam_timestamp;
-        fibrose_count++;
-    }
-    else if (condition_IA == "Tuberculose")
-    {
-        tuberculose_time += exam_timestamp;
-        tuberculose_count++;
-    }
-    else if (condition_IA == "Cancer de pulmao")
-    {
-        cancer_time += exam_timestamp;
-        cancer_count++;
-    }
-}
+    if (strcmp(get_report_condition(report), "Saude Normal") == 0) {
+    *count_healthy += timestamp;
+    *qtd_healthy += 1;
 
-void print_average_time_report(float healthy_time, float bronquite_time, float pneumonia_time, float covid_time, float embolia_time, float derrame_time, float fibrose_time, float tuberculose_time, float cancer_time, int healthy_count, int bronquite_count, int pneumonia_count, int covid_count, int embolia_count, int derrame_count, int fibrose_count, int tuberculose_count, int cancer_count)
-{
-    printf("Average time for healthy patients: %f\n", healthy_time / healthy_count);
-    printf("Average time for bronquite patients: %f\n", bronquite_time / bronquite_count);
-    printf("Average time for pneumonia patients: %f\n", pneumonia_time / pneumonia_count);
-    printf("Average time for COVID patients: %f\n", covid_time / covid_count);
-    printf("Average time for embolia patients: %f\n", embolia_time / embolia_count);
-    printf("Average time for derrame patients: %f\n", derrame_time / derrame_count);
-    printf("Average time for fibrose patients: %f\n", fibrose_time / fibrose_count);
-    printf("Average time for tuberculose patients: %f\n", tuberculose_time / tuberculose_count);
-    printf("Average time for cancer patients: %f\n", cancer_time / cancer_count);
+    } else if (strcmp(get_report_condition(report), "Bronquite") == 0) {
+    *count_bronquite += timestamp;
+    *qtd_bronquite += 1;
+
+    } else if (strcmp(get_report_condition(report), "Penumonia") == 0) {
+    *count_pneumonia += timestamp;
+    *qtd_pneumonia += 1;
+
+    } else if (strcmp(get_report_condition(report), "COVID") == 0) {
+    *count_covid += timestamp;
+    *qtd_covid += 1;
+
+    } else if (strcmp(get_report_condition(report), "Embolia pulmonar") == 0) {
+    *count_embolia += timestamp;
+    *qtd_embolia += 1;
+
+    } else if (strcmp(get_report_condition(report), "Derrame pleural") == 0) {
+    *count_derrame += timestamp;
+    *qtd_derrame += 1;
+
+    } else if (strcmp(get_report_condition(report), "Fibrose pulmonar") == 0) {
+    *count_fibrose += timestamp;
+    *qtd_fibrose += 1;
+
+    } else if (strcmp(get_report_condition(report), "Tuberculose") == 0) {
+    *count_tuberculose += timestamp;
+    *qtd_tuberculose += 1;
+
+    } else if (strcmp(get_report_condition(report), "Cancer de pulmao") == 0) {
+    *count_cancer += timestamp;
+    *qtd_cancer += 1;
+    }
 }

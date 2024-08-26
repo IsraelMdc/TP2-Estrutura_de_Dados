@@ -148,11 +148,10 @@ void checkExamDuration(ExamPriorityQueue *exam_priority_queue, MachineList *mach
     {
         if (current->is_occupied == 1 && timestamp >= current->machine_timestamp + 10)
         {
-            printf("Exam finished for patient %s arrived %d at machine %d out at %d\n", current->machine_patient->name,current->machine_timestamp, current->id_machine, timestamp);
+            // printf("Exam finished for patient %s arrived %d at machine %d out at %d\n", current->machine_patient->name,current->machine_timestamp, current->id_machine, timestamp);
             Patient *removed_patient = removePatientFromMachine(machine_list, current->id_machine);
 
             exam_creation(exam_priority_queue, removed_patient->id, current->id_machine, removed_patient->id, timestamp);
-
             q_enqueue(q_patient_outs, removed_patient);
 
             movePatientToQueue(machine_list, current->id_machine, q_patient_outs, removed_patient);
