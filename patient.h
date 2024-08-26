@@ -10,7 +10,7 @@ typedef struct queue_patient QueuePatient; // Definition for a queue of patients
 typedef struct queue_node_patient QueueNodePatient; // Definition for a node in the patient queue
 typedef struct machine_list MachineList; // Definition for a list of machines
 
-// Function declarations
+// Function declarations//
 
 // Creates a new patient with the given ID and timestamp.
 

@@ -1,7 +1,7 @@
 #ifndef EXAM_H
 #define EXAM_H
 
-// Define the structure for an exam
+// Define the structure for an exam//
 typedef struct exam Exam;
 
 // Define the structure for a node in a queue of exams

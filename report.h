@@ -23,7 +23,7 @@ int *qtd_covid, int *count_pneumonia, int *qtd_pneumonia, int *count_bronquite, 
 // Frees the memory allocated for the report.
 void report_destroy(Report *report);
 
-// Returns the condition of the report.
+// Returns the condition of the report.//
 char *get_report_condition(Report *report);
 
 #endif

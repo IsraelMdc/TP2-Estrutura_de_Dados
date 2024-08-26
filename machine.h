@@ -14,7 +14,7 @@ typedef struct exam_priority_queue ExamPriorityQueue; // Forward declaration of 
 
 // Function prototypes
 
-// Create a new MachineList and return a pointer to it
+// Create a new MachineList and return a pointer to it//
 MachineList *createMachineList();
 
 // Create a new MachineNode with the given ID and return a pointer to it

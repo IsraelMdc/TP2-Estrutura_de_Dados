@@ -7,7 +7,7 @@
 #include <string.h>
 #include <assert.h>
 
-// Definition of the Report structure
+// Definition of the Report structure//
 struct report {
     int report_id;             // Unique identifier for the report
     int exam_id;               // Identifier of the associated exam

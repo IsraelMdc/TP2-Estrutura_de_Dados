@@ -225,5 +225,5 @@ void destroyExamPriorityQueue(ExamPriorityQueue *q)
     
     // Free the memory allocated for the priority queue itself
     free(q);
-}
+};
 

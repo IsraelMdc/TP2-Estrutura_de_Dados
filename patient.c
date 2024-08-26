@@ -189,5 +189,5 @@ void destroyPatientQueue(QueuePatient *q)
    {
       patient_dequeue(q); // Dequeue each patient
    }
-   free(q); // Free the queue memory
+   free(q); // Free the queue memory //
 }
